@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - akaqa.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="crown-icon.png" alt="akaqa Icon">
+                <span>akaqa</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>TOP CHARTS</li>
+                <li>APP</li>
+                <li class="active">SOFTWARE</li>
+                <li>EDITOR'S CHOICE</li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Find any apps">
+            <button><img src="search-icon.png" alt="Search"></button> <!-- Replace with magnifying glass icon -->
+        </div>
+    </header>
+    <main>
+        <section class="software-details">
+            <div class="software-hero">
+                <img id="software-icon" src="" alt="Software Icon">
+                <div class="software-info">
+                    <h1 id="software-title"></h1>
+                    <p id="software-developer"></p>
+                    <div class="software-stats">
+                        <span id="software-rating"></span>
+                        <span id="software-downloads"></span>
+                        <span id="software-age"></span>
+                    </div>
+                    <button class="download-btn" id="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="software-about">
+                <h2>About This App</h2>
+                <p id="software-description"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a> |
+            <a href="privacy.html">Privacy</a> |
+            <a href="terms-of-use.html">Terms Of Use</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="software-template.js"></script>
+    <script>
+        // Ensure the DOM is fully loaded before running the script
+        document.addEventListener("DOMContentLoaded", () => {
+            populateSoftwarePage({
+                icon: "images/amongus.png",
+                title: "Among Us",
+                developer: "Innersloth Inc",
+                rating: "4.5 ★★★★☆",
+                downloads: "5M+ Downloads",
+                age: "4+",
+                description: "It’s this super fun social game where you’re thrown into a group of colorful little crewmates, all bustling around a spaceship or base, trying to get stuff done. You’ve got tasks to finish, like fixing wires or swiping cards, but here’s the kicker: some of those crewmates? They’re not what they seem. They’re sneaky impostors out to sabotage everything and take everyone out, one by one. The game’s all about figuring out who’s who, chatting it up with your pals, and either keeping the ship running or, if you’re the impostor, causing some serious chaos. It’s wild how much tension and laughs come out of it.So, the gameplay. Among Us drops you into this setup where you’re either a crewmate or an impostor, and it’s all about playing your role. If you’re a crewmate, you’re rushing around doing these little jobs, like dumping trash or scanning yourself, all while keeping an eye out for anything fishy. You’ve got to finish your tasks to win, but if someone gets taken out, you’re all called to a meeting to argue over who’s sus. Point fingers, make your case, and vote someone off if you think they’re the bad guy. But if you’re the impostor? Oh man, it’s a blast. You’re sneaking through vents, faking tasks, and picking off crewmates when no one’s looking. You’ve got to blend in, lie your way through chats, and mess with the ship, like killing the lights or triggering alarms. It’s all about outsmarting everyone, and every round feels like a mini detective story.The graphics in Among Us are pretty simple, but that’s part of the charm. You’ve got these cute, bean shaped characters in bright colors, waddling around these cartoony maps, like a spaceship, a base on a lava planet, or an airship floating in the sky. It’s all 2D, top down, so you’re watching everything unfold like a little animated show. The maps are packed with details, rooms, and pathways, but it’s still easy to get around. The animations are basic, like crewmates just sliding along or poofing into ghosts when they’re out, but it’s so clean and playful that it totally works.Replayability? Oh, Among Us has that in buckets. Every game’s different because it’s all about the people you’re with. One round, you’re a crewmate sweating over tasks, the next, you’re an impostor pulling off the sneakiest moves. The maps mix things up, and the randomness of who’s the impostor keeps you guessing. Plus, you can tweak the rules, like how fast everyone moves or how long chats last, so it never gets old. Playing with friends is a riot, everyone yelling and laughing over who’s lying, but even with random folks online, it’s a good time. You can jump in over and over, and it’s always a fresh mess of fun.Wrapping it up, Among Us is this brilliant little game that took a simple idea, crewmates versus impostors, and turned it into a total blast. It started small but blew up because it’s so easy to pick up and play. The graphics are basic but lovable, with those goofy little beans running around. It’s out on tons of platforms now, phones, computers, even consoles, and it’s perfect for all ages. Whether you’re trying to spot the liar or be the sneakiest saboteur, it’s all about the thrill of the moment, and that’s why I keep hopping back in!",
+                downloadLink: "https://play.google.com/apps"
+            });
+        });
+    </script>
+</body>
+</html>

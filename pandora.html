@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - akaqa.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="crown-icon.png" alt="akaqa Icon">
+                <span>akaqa</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>TOP CHARTS</li>
+                <li>APP</li>
+                <li class="active">SOFTWARE</li>
+                <li>EDITOR'S CHOICE</li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Find any apps">
+            <button><img src="search-icon.png" alt="Search"></button> <!-- Replace with magnifying glass icon -->
+        </div>
+    </header>
+    <main>
+        <section class="software-details">
+            <div class="software-hero">
+                <img id="software-icon" src="" alt="Software Icon">
+                <div class="software-info">
+                    <h1 id="software-title"></h1>
+                    <p id="software-developer"></p>
+                    <div class="software-stats">
+                        <span id="software-rating"></span>
+                        <span id="software-downloads"></span>
+                        <span id="software-age"></span>
+                    </div>
+                    <button class="download-btn" id="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="software-about">
+                <h2>About This App</h2>
+                <p id="software-description"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a> |
+            <a href="privacy.html">Privacy</a> |
+            <a href="terms-of-use.html">Terms Of Use</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="software-template.js"></script>
+    <script>
+        // Ensure the DOM is fully loaded before running the script
+        document.addEventListener("DOMContentLoaded", () => {
+            populateSoftwarePage({
+                icon: "images/pandora.png",
+                title: "Pandora.com",
+                developer: "Pandora Media, LLC",
+                rating: "4.2 ★★★★☆",
+                downloads: "10M+ Downloads",
+                age: "4+",
+                description: "Pandora gives you a personalized listening experience that continually evolves with your tastes.\n\nCreate stations from your favorite songs, artists or genres, search or browse to find recommended stations for your mood or activity, and discover podcasts that speak to you. Download today and get instant access to your favorite artists and podcasts, while staying up to date on the most recent singles and releases. From rap and pop to rock and country, play your favorite artists and stay up to date on today’s top hits and releases. Start streaming all of the current global hits and enjoy your own personalized music experience.\n\nTake Pandora with you wherever you go with Android Auto for your daily commute or your next road trip. Enjoy your own personalized music or podcast experience from anywhere on the world’s most powerful music discovery platform. The new voice mode lets you search, play, pause, skip adjust volume & thumb up music with a simple voice command. Start streaming your favorite artist, song, genre, or podcast instantly today for free in your car.\n\nEnjoy everything Pandora has to offer right from the convenience of your wrist, with Google’s Wear OS. With a quick tap, you can control media playback such as play/pause, replay, skip, thumbs, and more. No phone necessary.",
+                downloadLink: "https://www.spotify.com/us/download"
+            });
+        });
+    </script>
+</body>
+</html>

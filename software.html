@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - akaqa.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="crown-icon.png" alt="akaqa Icon">
+                <span>akaqa</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>TOP CHARTS</li>
+                <li>APP</li>
+                <li class="active">SOFTWARE</li>
+                <li>EDITOR'S CHOICE</li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Find any apps">
+            <button><img src="search-icon.png" alt="Search"></button> <!-- Replace with magnifying glass icon -->
+        </div>
+    </header>
+    <main>
+        <section class="software-details">
+            <div class="software-hero">
+                <img id="software-icon" src="" alt="Software Icon">
+                <div class="software-info">
+                    <h1 id="software-title"></h1>
+                    <p id="software-developer"></p>
+                    <div class="software-stats">
+                        <span id="software-rating"></span>
+                        <span id="software-downloads"></span>
+                        <span id="software-age"></span>
+                    </div>
+                    <button class="download-btn" id="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="software-about">
+                <h2>About This App</h2>
+                <p id="software-description"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a> |
+            <a href="privacy.html">Privacy</a> |
+            <a href="terms-of-use.html">Terms Of Use</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="software-template.js"></script>
+    <script>
+        // Ensure the DOM is fully loaded before running the script
+        document.addEventListener("DOMContentLoaded", () => {
+            populateSoftwarePage({
+                icon: "images/google-play-store.png",
+                title: "Google play store",
+                developer: "Alphabet Inc",
+                rating: "4.2 ★★★★☆",
+                downloads: "390M+ Downloads",
+                age: "4+",
+                description: "PSo, Google just dropped some pretty cool updates and shiny new features for the Google Play Store, and I’m kinda excited about it! They’ve been tinkering around to squash those pesky bugs and make everything run smoother—like, way better performance, tighter security, and rock-solid stability. Oh, and it’s easier for everyone to use now, which is a big win. Downloads and installations? They’re zipping along faster than ever, and I haven’t had a single hiccup yet—super reliable stuff. They’ve even beefed up Game Protection, so your device stays safe while you’re gaming, which is honestly a relief. Plus, they’ve sprinkled in some neat new tools to help you stumble across your next favorite app or game—kinda like a treasure hunt, right? And word is, there’s more fixes and goodies coming our way as the month rolls on. If you wanna jump in on this, grab version 33.5 of the Google Play Store now—it’s honestly a way better experience!For those who don’t know, Google Play—yep, the one that used to be called Android Market—is this huge digital hub run by Google. It’s the go-to app store for all the certified Android devices out there, and it’s been that way for a while. But it’s not just apps—it’s a whole media playground! You can snag music, flip through books, rent movies, or binge some TV shows. It’s like a one-stop shop for all things digital, and I’ve always thought that’s pretty darn convenient.Now, here’s something interesting I heard—Google Play Store and Apple’s App Store might be facing some new rules over in Europe. It’s all about looking out for the app developers, making sure they get a fair shake. One of the biggest gripes devs have is when their apps just vanish from the stores out of nowhere—no warning, no explanation, just poof! Gone. Drives them up the wall, and I totally get why. So, under these new rules, Google and Apple have to give developers a heads-up—like, 30 days’ notice—before pulling an app, and they’ve gotta spill the beans on why. Sounds like a step in the right direction to me, keeping things a bit more fair and transparent.If you’re itching to try out these new changes in the Google Play Store, you’ll wanna grab the latest APK we’ve got for you. It’s the easiest way to get all hooked up with the updates—trust me, you won’t regret it!",
+                downloadLink: "https://play.google.com/apps"
+            });
+        });
+    </script>
+</body>
+</html>

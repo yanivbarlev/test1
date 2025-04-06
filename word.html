@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - upingi.com.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="crown-icon.png" alt="upingi.com Icon">
+                <span>upingi.com</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>TOP CHARTS</li>
+                <li>APP</li>
+                <li class="active">SOFTWARE</li>
+                <li>EDITOR'S CHOICE</li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Find any apps">
+            <button><img src="search-icon.png" alt="Search"></button> <!-- Replace with magnifying glass icon -->
+        </div>
+    </header>
+    <main>
+        <section class="software-details">
+            <div class="software-hero">
+                <img id="software-icon" src="" alt="Software Icon">
+                <div class="software-info">
+                    <h1 id="software-title"></h1>
+                    <p id="software-developer"></p>
+                    <div class="software-stats">
+                        <span id="software-rating"></span>
+                        <span id="software-downloads"></span>
+                        <span id="software-age"></span>
+                    </div>
+                    <button class="download-btn" id="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="software-about">
+                <h2>About This App</h2>
+                <p id="software-description"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a> |
+            <a href="privacy.html">Privacy</a> |
+            <a href="terms-of-use.html">Terms Of Use</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="software-template.js"></script>
+    <script>
+        // Ensure the DOM is fully loaded before running the script
+        document.addEventListener("DOMContentLoaded", () => {
+            populateSoftwarePage({
+                icon: "images/word.png",
+                title: "Microsoft Word",
+                developer: "Microsoft",
+                rating: "4.1 ★★★☆☆",
+                downloads: "180M+ Downloads",
+                age: "4+",
+                description: "Microsoft Word stands as a cornerstone of modern productivity software, a word processing tool that has shaped how professionals, students, and creatives alike craft documents. First launched in 1983 by Microsoft, under the original name “Multi-Tool Word,” it was designed by Charles Simonyi and Richard Brodie for the IBM PC. Over the decades, it has evolved from a rudimentary text editor into a sophisticated platform, becoming an integral part of the Microsoft Office suite. Today, it’s the gold standard for document creation, widely respected for its robust features, intuitive interface, and seamless integration with other Microsoft tools.At its heart, Word is about empowering users to produce polished, professional content. It offers a vast array of tools—starting with the basics like font customization, paragraph formatting, and spell-checking, which have been refined over years to near perfection. Users can draft anything from simple letters to complex reports, leveraging templates for resumes, newsletters, or legal documents that save time and ensure consistency. The program’s advanced features, such as track changes, comments, and real-time collaboration via Microsoft 365, make it indispensable for team projects, allowing multiple users to edit simultaneosly with precision and clarity.Word’s versatility extends beyond text. It supports the integration of tables, charts, images, and even SmartArt, enabling users to create visually compelling documents. The mail merge function is a standout for businesses, streamlining mass correspondence like personalized letters or labels. Accessibility tools—like the Read Aloud feature and compatibility with screen readers—demonstrate Microsoft’s commitment to inclusivity, while the recent addition of AI-powered features, such as the Editor tool, provides real-time grammar, style, and tone suggestions, elevating the quality of writing effortlessly.The software’s design balances power with usability. Its ribbon interface, introduced in 2007, organizes tools logically, though it initially sparked debate among longtime users accustomed to classic menus. Regular updates ensure Word adapts to modern needs—cloud storage via OneDrive, for instance, allows users to access documents anywhere, while cross-platform support spans Windows, macOS, and mobile devices. This flexibility has kept it relevant in a fast-paced digital world.Of course, Word isn’t without quirks. Some users find its extensive options overwhelming, and occasional compatibility issues arise between versions or file formats. Yet, its dominance is undeniable—studies suggest it holds over 90% of the word processing market. Its influence permeates workplaces, schools, and homes globally, a testament to its reliability and adaptability. As of 2025, with Microsoft continuing to innovate through AI and cloud enhancements, Word remains a vital tool, blending tradition with cutting-edge technology to meet the demands of a diverse, ever-evolving user base.",
+                downloadLink: "https://www.microsoft.com/en/microsoft-365/word?market=af"
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - upingi.com.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="crown-icon.png" alt="upingi.com Icon">
+                <span>upingi.com</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>TOP CHARTS</li>
+                <li>APP</li>
+                <li class="active">SOFTWARE</li>
+                <li>EDITOR'S CHOICE</li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Find any apps">
+            <button><img src="search-icon.png" alt="Search"></button> <!-- Replace with magnifying glass icon -->
+        </div>
+    </header>
+    <main>
+        <section class="software-details">
+            <div class="software-hero">
+                <img id="software-icon" src="" alt="Software Icon">
+                <div class="software-info">
+                    <h1 id="software-title"></h1>
+                    <p id="software-developer"></p>
+                    <div class="software-stats">
+                        <span id="software-rating"></span>
+                        <span id="software-downloads"></span>
+                        <span id="software-age"></span>
+                    </div>
+                    <button class="download-btn" id="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="software-about">
+                <h2>About This App</h2>
+                <p id="software-description"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a> |
+            <a href="privacy.html">Privacy</a> |
+            <a href="terms-of-use.html">Terms Of Use</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="software-template.js"></script>
+    <script>
+        // Ensure the DOM is fully loaded before running the script
+        document.addEventListener("DOMContentLoaded", () => {
+            populateSoftwarePage({
+                icon: "images/sims.png",
+                title: "The Sims",
+                developer: "Electronic Arts",
+                rating: "4.4 ★★★★☆",
+                downloads: "69M+ Downloads",
+                age: "12+",
+                description: "The Sims is a groundbreaking life simulation video game series that has captivated millions of players worldwide since its debut in 2000. Developed by Maxis and published by Electronic Arts (EA), the game was originally conceived by designer Will Wright, who drew inspiration from his earlier work, SimCity, and his fascination with human behavior and social dynamics. Unlike traditional video games that focus on combat, puzzles, or specific objectives, The Sims offers an open-ended sandbox experience where players create and control virtual people—known as "Sims"—as they navigate the ups and downs of everyday life. The series has since evolved through multiple main installments, including The Sims (2000), The Sims 2 (2004), The Sims 3 (2009), and The Sims 4 (2014), each building on its predecessor with enhanced graphics, deeper mechanics, and expanded creative possibilities.At its core, The Sims is about storytelling and simulation. Players begin by designing their Sims, customizing everything from their physical appearance—hair color, body shape, facial features—to their personality traits, aspirations, and even their fashion sense. Once created, these Sims are placed into a virtual neighborhood where they live in homes that players can build and decorate from scratch. The architectural tools in the game are remarkably detailed, allowing players to construct everything from cozy cottages to sprawling mansions, complete with furniture, wallpaper, landscaping, and quirky decorative items. This creative freedom is one of the game’s hallmarks, appealing to players who enjoy interior design and architecture as much as those who love crafting narratives.The gameplay revolves around managing the daily lives of Sims, which mirrors real-world routines in a whimsical yet relatable way. Sims have basic needs—hunger, hygiene, bladder, energy, social interaction, and fun—that players must fulfill to keep them happy and healthy. Neglecting these needs can lead to humorous or dramatic consequences: a Sim might pass out from exhaustion, wet themselves if they can’t reach a bathroom, or spiral into a grumpy mood from lack of fun. Beyond survival, Sims also pursue careers, build relationships, develop skills, and chase personal goals. They can become chefs, doctors, astronauts, or even social media influencers, depending on the game version and its expansions. Relationships are a key feature, too—Sims can make friends, fall in love, get married, have children, or even feud with neighbors, all driven by player choices and the Sims’ unique personalities.What sets The Sims apart is its blend of realism and absurdity. While the game mimics mundane tasks like cooking dinner or going to work, it’s peppered with delightfully bizarre elements. Sims speak in a gibberish language called Simlish, a playful mix of nonsense syllables that somehow conveys emotion perfectly. Random events—like a meteor crashing into the backyard, a visit from the Grim Reaper when a Sim dies, or an alien abduction—inject chaos and humor into the experience. Expansion packs, a staple of the series, amplify this variety by introducing supernatural creatures (vampires, witches, mermaids), new locations (tropical islands, bustling cities), and seasonal activities (skiing, gardening), ensuring the game never feels stagnant.The Sims has also fostered a passionate community. Players share their creations—custom Sims, houses, and storylines—online, while modders craft custom content to enhance the game, from new hairstyles to gameplay tweaks. This communal aspect reflects the game’s ethos: it’s a canvas for imagination. Whether a player wants to recreate their own life, build a utopian society, or orchestrate soap opera-style drama (locking Sims in doorless rooms is a notorious pastime), The Sims accommodates it all. Critics sometimes note its repetitive tasks or occasional bugs, but its charm lies in its simplicity and the endless possibilities it offers.Over two decades, The Sims has sold over 200 million copies, making it one of the best-selling video game franchises ever. Its cultural impact is undeniable—it’s been praised for its inclusivity (same-sex relationships were included from the start) and parodied in shows like South Park. For many, it’s more than a game; it’s a digital dollhouse, a social experiment, and a creative outlet rolled into one. With The Sims 4 still receiving updates and a fifth installment rumored to be in development as of 2025, the series shows no signs of slowing down, continuing to invite players to ask, “What if?” in a world where they hold all the strings.",
+                downloadLink: "https://www.ea.com/en/games/the-sims/the-sims-4/buy"
+            });
+        });
+    </script>
+</body>
+</html>

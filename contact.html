@@ -3,43 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use - upingi.com.com</title>
+    <title>Contact Us | Upingi.com</title>
+    <meta name="description" content="Contact Upingi.com for questions, suggestions, or support. We're here to help with your software download needs.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="crown-icon.png" alt="upingi.com.com Icon"> <!-- Replace with your crown/hat icon -->
-            <span>upingi.com.com</span>
-        </div>
+        <h1 class="logo">upingi.com</h1>
         <nav>
-            <ul>
-                <li class="active">TOP CHARTS</li>
-                <li>APP</li>
-                <li>SOFTWARE</li>
-                <li>EDITOR'S CHOICE</li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="top-downloads.html">Top Downloads</a>
+            <a href="productivity.html">Productivity</a>
+            <a href="games.html">Games</a>
+            <a href="faq.html">FAQ</a>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Find any apps">
-            <button><img src="search-icon.png" alt="Search"></button> <!-- Replace with magnifying glass icon -->
-        </div>
     </header>
-    <main>
-        <section class="terms-of-use">
-            <h1>Contact</h1>
-            <h2>support [at] upingi.com.com</h2>
-			<p> We'd love to hear from you. Please send us your thoughts and questions to the email above</p>
-            
+
+    <!-- Main Content -->
+    <main class="contact-content">
+        <h1>Contact Us</h1>
+        <p class="page-description">Have questions or suggestions? We'd love to hear from you. Please use the form below to get in touch.</p>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Ways to Reach Us</h2>
+                <ul>
+                    <li><strong>General Inquiries:</strong> Use the contact form below</li>
+                    <li><strong>Support Hours:</strong> Monday - Friday, 9 AM - 5 PM EST</li>
+                    <li><strong>Response Time:</strong> Within 24-48 business hours</li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="/submit-contact" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Please select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="suggestion">Software Suggestion</option>
+                            <option value="advertising">Advertising</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="privacy" required>
+                            I have read and agree to the Privacy Policy and Terms of Service *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
         </section>
+
+        <section class="faq-preview">
+            <h2>Common Questions</h2>
+            <p>Before contacting us, you might find answers to your questions in our FAQ section:</p>
+            <ul>
+                <li><a href="faq.html#download">How do I download software?</a></li>
+                <li><a href="faq.html#safety">Is it safe to download from Upingi.com?</a></li>
+                <li><a href="faq.html#troubleshooting">Having trouble with a download?</a></li>
+                <li><a href="faq.html">View all FAQs</a></li>
+            </ul>
+        </section>
+
+        <!-- Banner Ad -->
+        <div class="banner-ad" data-ad-client="ca-pub-1234567890123456" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true">Banner Ad Placeholder (728x90)</div>
     </main>
+
+    <!-- Footer -->
     <footer>
+        <h1 class="logo">upingi.com</h1>
         <div class="footer-links">
-            <a href="about-us.html">About Us</a> |
-            <a href="privacy.html">Privacy</a> |
-            <a href="terms-of-use.html" class="active">Terms Of Use</a> |
-            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </div>
+        <p class="disclaimer">This site is monetized through ads and affiliate links.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
-</html>
+</html> 

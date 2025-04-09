@@ -79,7 +79,8 @@ main {
 }
 
 /* Banner Ad */
-.banner-ad {
+/* Remove original banner-ad div styling */
+/* .banner-ad {
     width: 728px;
     height: 90px;
     background: #CCCCCC;
@@ -90,6 +91,21 @@ main {
     color: #000000;
     border-radius: 5px;
     font-weight: bold;
+} */
+
+.banner-ad-link {
+    display: block; /* Make the link a block element */
+    width: 728px;   /* Set width */
+    height: 90px;    /* Set height */
+    margin: 20px auto; /* Center the banner horizontally */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.banner-ad-image {
+    width: 100%;     /* Make image fill the link container width */
+    height: 100%;    /* Make image fill the link container height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block;  /* Remove extra space below image */
 }
 
 /* Category Sections */

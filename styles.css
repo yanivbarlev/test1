@@ -235,6 +235,23 @@ footer {
     color: #666666;
 }
 
+/* Ensure consistent icon size in related software/games grid */
+.related-software .software-grid .software-entry img,
+.related-software .software-grid .software-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Software Details Page Specific Styles */
+.software-details {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .software-grid {
@@ -344,30 +361,58 @@ footer {
     text-align: center;
 }
 
-.software-grid {
+/* Modify grid for related software */
+.related-software .software-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Enforce 4 columns */
     gap: 20px;
     margin-top: 20px;
 }
 
-.software-entry {
+/* Add flex properties to software-entry within related-software */
+.related-software .software-entry {
     background-color: #f5f5f5;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.software-entry img {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 10px;
+/* Add rule for software-item within related-software (consistent styling + flex) */
+.related-software .software-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Modify image margins within related items */
+.related-software .software-grid .software-entry img,
+.related-software .software-grid .software-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px; /* Rely on flex centering, just add bottom margin */
     border-radius: 8px;
 }
 
-.software-entry h3 {
-    font-size: 1.2rem;
+/* Add rule for h3 within related items */
+.related-software .software-entry h3,
+.related-software .software-item h3 {
+    font-size: 1.1rem;
     margin: 10px 0;
+    flex-grow: 1; /* Allow title to take available space, pushing button down */
+}
+
+/* Add rule for button within related items */
+.related-software .software-entry .ad-button,
+.related-software .software-item .ad-button {
+   margin-top: auto; /* Pushes button to the bottom */
 }
 
 /* Responsive Design for Product Page */

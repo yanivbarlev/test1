@@ -74,15 +74,15 @@ Make the site responsive. On mobile:
 ## 3. Ad Integration
 The site will make money through Google AdSense ads. Appurse places ads in a tricky way to get more clicks: their "Download" and "GET" buttons look like real download links but are actually ads. I want to do the same, targeting non-savvy users who won't notice the difference between ads and content.
 
-### 3.1 Where to Place Ads
+### 3.1 Where to Place Ads and Links
 #### Homepage:
-- Green "Download" button under the featured software.
-- Green "GET" buttons next to each of the 8 software entries in the "Productivity" and "Games" sections.
-- Green "GET" buttons in the sidebar for the 8 "Top Downloads" entries.
+- Green "Download" button under the featured software (Ad).
+- Green "GET" buttons next to each of the 8 software entries in the "Productivity" and "Games" sections (Ad).
+- Green "GET" buttons in the sidebar for the 8 "Top Downloads" entries (Ad).
 
 #### Product Pages:
-- Green "Download" buttons near the top and bottom of the software details.
-- Green "GET" buttons for the 4 related software entries.
+- Green "Download" buttons near the top and bottom of the software details (Ad).
+- Green "GET" buttons for the 4 related software entries (**Internal Link**: These should link to the corresponding product page, e.g., the Slack button links to `slack-download.html`).
 
 #### Other Ads:
 - Add a banner ad placeholder (e.g., a 728x90 pixel rectangle) between the "Productivity" and "Games" sections (I'll provide the ad code later).

@@ -32,7 +32,7 @@
   - Add a placeholder image: `<img src="images/placeholder-600x400.jpg" alt="Featured software screenshot">`.
   - Add a tagline: `<h2>Works Wherever You Work</h2>`.
   - Add a 50-word placeholder description: `<p>Description for featured software goes here...</p>`.
-  - Add a green "Download" button (ad placeholder): `<button class="ad-button">Download Now</button>`.
+  - Add a green "Download" button (ad placeholder): `<button class="cta-button">Download Now</button>`.
 
 ### 2.3 Category Sections (Productivity and Games)
 - Create a reusable `<section>` template for categories in index.html:
@@ -43,7 +43,7 @@
       - Placeholder icon: `<img src="images/placeholder-50x50.jpg" alt="Software icon">`.
       - Name: `<h3>Zoom</h3>` (use placeholder names like "Software 1", "Software 2", etc.).
       - Rating: `<p>4.5/5</p>`.
-      - Green "GET" button (ad placeholder): `<button class="ad-button">GET</button>`.
+      - Green "GET" button (ad placeholder): `<button class="cta-button">GET</button>`.
   - Add a "Games" section (same structure as above, with different placeholder names).
   - Add a gray `<hr>` between sections, styled with CSS (e.g., border: 1px solid #CCCCCC;).
 - Ensure the section structure is reusable (e.g., use a class like category-section so I can copy it for new categories).
@@ -55,7 +55,7 @@
     - Placeholder icon: `<img src="images/placeholder-50x50.jpg" alt="Software icon">`.
     - Name: `<h3>Software Name</h3>`.
     - Rating: `<p>4.5/5</p>`.
-    - Green "GET" button (ad placeholder): `<button class="ad-button">GET</button>`.
+    - Green "GET" button (ad placeholder): `<button class="cta-button">GET</button>`.
 
 ### 2.5 Banner Ad Placeholder
 - Add a banner ad placeholder between the "Productivity" and "Games" sections:
@@ -77,8 +77,8 @@
     - Price: `<p>Price: Free</p>`.
     - Developer: `<p>Developer: Zoom Inc.</p>`.
   - Green "Download" buttons (ad placeholders):
-    - One near the top: `<button class="ad-button">Download Now</button>`.
-    - One at the bottom: `<button class="ad-button">Download Now</button>`.
+    - One near the top: `<button class="cta-button">Download Now</button>`.
+    - One at the bottom: `<button class="cta-button">Download Now</button>`.
 
 ### 3.3 Related Software
 - Add a "Related Software" section:
@@ -86,7 +86,7 @@
   - Grid of 4 entries (2 per row, 2 rows), each with:
     - Placeholder icon: `<img src="images/placeholder-50x50.jpg" alt="Software icon">`.
     - Name: `<h3>Software Name</h3>`.
-    - Green "GET" button (ad placeholder): `<button class="ad-button">GET</button>`.
+    - Green "GET" button (ad placeholder): `<button class="cta-button">GET</button>`.
 
 ### 3.4 Footer
 - Add the footer (same as below for the homepage).
@@ -107,7 +107,7 @@
 
 ### 5.2 Ad Buttons
 - Style the "Download" and "GET" buttons:
-  - Class: .ad-button.
+  - Class: .cta-button.
   - Style: background: #00FF00; color: #FFFFFF; font-weight: bold; border-radius: 5px; padding: 10px 20px; border: none;.
   - Hover effect: background: #00CC00;.
 

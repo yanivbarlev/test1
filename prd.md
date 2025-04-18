@@ -1,6 +1,6 @@
 # Final Plan Specification for Upingi.com (Fully Custom-Built with Cursor.ai, No Search Bar)
 
-I'm building a website called upingi.com to list top downloadable software, with the goal of earning money through Google AdSense ads. The site will attract traffic from Google (targeting over 100,000 monthly visitors) and use ads to generate clicks. I want to copy the design and structure of a website called Appurse (https://www.appurse.com/), which I've provided screenshots for (homepage and product page). Appurse has a clean layout with software listings, categories, and ads that look like download buttons to trick users into clicking them. My site should do the same, targeting general non-savvy users who won't distinguish ads from content. The site will be optimized for search engines (SEO) to rank well on Google.
+I'm building a website called upingi.com to list top downloadable software, with the goal of earning money through Google AdSense ads. The site will attract traffic from Google (targeting over 100,000 monthly visitors) and use ads to generate clicks. I want to copy the design and structure of a website called Appurse (https://www.appurse.com/), which I've provided screenshots for (homepage and product page). Appurse has a clean layout with software listings, categories, and ads that look like download buttons to trick users into clicking them. My site should do the same for most buttons, targeting general non-savvy users who won't distinguish ads from content. The site will be optimized for search engines (SEO) to rank well on Google.
 
 I'll use Cursor.ai to build the entire site from scratch using HTML, CSS, and JavaScript, without relying on WordPress or any external platforms. The site will focus on Productivity and Games categories (8 entries per page), use blue for branding, exclude user ratings, social media sharing links, and a search bar. I'll build the site myself with no budget.
 
@@ -13,19 +13,19 @@ The website will have a homepage, product pages for individual software, and a f
 - Footer: Links to "About," "Privacy Policy," and a disclaimer about earning money from ads.
 
 ### 1.1 Header
-- Logo: Create a simple text logo for "upingi.com" on the left. Use a blue color (e.g., #0000FF) for the text.
+- Logo: Create a simple text logo for "upingi.com" on the left, wrapped in a link to `index.html`. Use a blue color (e.g., #0000FF) for the text.
 - Navigation Menu: Add links for "Home," "Top Downloads," "Productivity," "Games," and "FAQ" in a horizontal bar. Use a white background and black text. Align the links to the right side of the header.
 
 ### 1.2 Homepage
 #### Featured Software Section:
-- Show a large placeholder image of a popular software (e.g., a gray rectangle, 600x400 pixels) at the top.
+- Show a large placeholder image of a popular software (e.g., a gray rectangle, 600x400 pixels, `images/placeholder-600x400.jpg`) at the top.
 - Add a short tagline (e.g., "Works Wherever You Work") and a 50-word description.
 - Place a green "Download" button below the description. This button will be an ad (I'll add the ad code later).
 
 #### Category Sections:
 - Create two sections: "Productivity" and "Games."
 - Each section should show 8 software entries in a grid (4 entries per row, 2 rows). For each software, show:
-  - A small square placeholder icon (50x50 pixels, e.g., a gray square).
+  - A small square placeholder icon (50x50 pixels, e.g., `images/placeholder-50x50.jpg` initially).
   - The software name (e.g., "Zoom").
   - A star rating (e.g., "4.5/5").
   - A green "GET" button (an ad).
@@ -38,13 +38,16 @@ The website will have a homepage, product pages for individual software, and a f
 
 ### 1.3 Product Pages
 #### Software Details:
-- Show a large placeholder image of the software (600x400 pixels).
+- Show the main image for the specific software (e.g., `images/zoom.png`). If the image is missing, use the `images/placeholder-50x50.jpg` placeholder.
 - Add a tagline, a 100-word description, and a list of features (e.g., "Schedule meetings easily").
 - Include details like category (e.g., "Productivity"), price (e.g., "Free"), and developer (e.g., "Zoom Inc.").
 - Add two green "Download" buttons (ads): one near the top, one at the bottom.
 
 #### Related Software:
-- Show a grid of 4 related software entries, each with a placeholder icon, name, and "GET" button (ad).
+- Show a grid of 4 related software entries in a single row (4 columns). Each entry should contain:
+  - A specific icon for the related software (e.g., `images/slack.png`), sized at 100x100 pixels via CSS. If the specific icon is missing (e.g., Discord), use the `images/placeholder-50x50.jpg` placeholder.
+  - The software name (e.g., "Slack").
+  - A green "GET" button (**Internal Link**: This button links to the corresponding product page, e.g., `slack-download.html`).
 
 ### 1.4 Footer
 Add a footer with:
@@ -158,7 +161,8 @@ The site will be built entirely with HTML, CSS, and JavaScript, with no external
 - Generate a sitemap.xml file with URLs for all pages (e.g., index.html, zoom-download.html).
 
 ### 6.3 Placeholder Content
-- Use placeholder images (e.g., gray rectangles) for software icons and featured images.
+- Use placeholder images (`images/placeholder-600x400.jpg` for large featured images, `images/placeholder-50x50.jpg` for small icons where specific images are missing, like Discord or Dropbox in related sections).
+- Use specific images (e.g., `images/zoom.png`) where available for main product images and related software icons.
 - Use placeholder text for descriptions (e.g., "Description for Zoom goes here…").
 
 ## 7. Legal Setup

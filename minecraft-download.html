@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Minecraft - Popular Sandbox Game | Upingi.com</title>
     <meta name="description" content="Download Minecraft, the creative sandbox game where you can build, explore, and survive. Available for PC, mobile, and consoles. Join millions of players worldwide!">
+
+    <!-- Schema.org Markup for Software Application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Minecraft",
+      "applicationCategory": "Game, SandboxGame",
+      "operatingSystem": "Windows, macOS, Linux, iOS, Android, PlayStation, Xbox, Nintendo Switch",
+      "description": "Download Minecraft, the creative sandbox game where you can build, explore, and survive. Available for PC, mobile, and consoles. Join millions of players worldwide!",
+      "image": "https://upingi.com/images/minecraft.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Mojang Studios"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mojang Studios / Microsoft"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "26.95", // Varies by platform, using common PC price
+        "priceCurrency": "USD",
+        "category": "Paid with in-app purchases (Marketplace)"
+      },
+      "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https://upingi.com/minecraft-download.html"
+       }
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5092197082042333"
@@ -26,7 +58,7 @@
         <section class="software-details">
             <img src="images/minecraft.png" alt="Minecraft game icon">
             <h1>Minecraft</h1>
-            <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.minecraft.net/en-us/download', '_blank')">Download Now</button>
+            <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.minecraft.net/en-us/download', '_blank')">Download Now</button>
             
             <div class="software-info">
                 <p><strong>Category:</strong> Games</p>
@@ -59,7 +91,7 @@
 
         <section class="download-section">
             <h2>Download Minecraft</h2>
-            <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.minecraft.net/en-us/download', '_blank')">Download Now</button>
+            <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.minecraft.net/en-us/download', '_blank')">Download Now</button>
         </section>
 
         <section class="related-software">
@@ -68,25 +100,66 @@
                 <div class="software-item">
                     <img src="images/roblox.png" alt="Roblox Icon">
                     <h3>Roblox</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='roblox-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='roblox-download.html'">GET</button>
                 </div>
                 <div class="software-item">
                     <img src="images/fortnite.png" alt="Fortnite Icon">
                     <h3>Fortnite</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='fortnite-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='fortnite-download.html'">GET</button>
                 </div>
                 <div class="software-item">
                     <img src="images/pubg.png" alt="PUBG Icon">
                     <h3>PUBG</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='pubg-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='pubg-download.html'">GET</button>
                 </div>
                 <div class="software-item">
                     <img src="images/amongus.png" alt="Among Us Icon">
                     <h3>Among Us</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='amongus-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='amongus-download.html'">GET</button>
                 </div>
             </div>
         </section>
+
+        <!-- User Engagement Section -->
+        <section class="user-engagement content-section">
+            <hr>
+            <!-- Feedback Section -->
+            <div class="feedback-section">
+                <h4>Was this page helpful?</h4>
+                <button class="feedback-btn thumbs-up">👍</button>
+                <button class="feedback-btn thumbs-down">👎</button>
+                <span class="feedback-message" style="margin-left: 10px; display: none;">Thanks for your feedback!</span>
+            </div>
+            <hr>
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h2>Comments</h2>
+                <p>Share your experiences or ask a question!</p>
+                <!-- Placeholder for displaying comments -->
+                <div class="comments-display">
+                    <!-- Example comment (optional) -->
+                    <!--
+                    <div class="comment">
+                        <p><strong>User Name</strong> <span class="comment-date">- Jan 1, 2025</span></p>
+                        <p>Great summary, thanks!</p>
+                    </div>
+                    -->
+                </div>
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <h3>Leave a Comment</h3>
+                    <label for="comment-name">Name:</label><br>
+                    <input type="text" id="comment-name" name="name" required><br>
+                    <label for="comment-email">Email (optional, not displayed):</label><br>
+                    <input type="email" id="comment-email" name="email"><br>
+                    <label for="comment-text">Comment:</label><br>
+                    <textarea id="comment-text" name="comment" rows="4" required></textarea><br>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </section>
+        <!-- End User Engagement Section -->
+
     </main>
 
     <footer>

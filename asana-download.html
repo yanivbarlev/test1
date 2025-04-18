@@ -26,7 +26,7 @@
         <section class="software-details">
             <img src="images/asana.png" alt="Asana Icon" class="software-icon">
             <h1>Asana</h1>
-            <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://asana.com/download', '_blank')">Download Now</button>
+            <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://asana.com/download', '_blank')">Download Now</button>
             
             <div class="software-info">
                 <p><strong>Category:</strong> Productivity</p>
@@ -57,11 +57,40 @@
                     <li>Advanced search and filtering</li>
                 </ul>
             </div>
-        </section>
 
-        <section class="download-section">
-            <h2>Download Asana</h2>
-            <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://asana.com/download', '_blank')">Download Now</button>
+            <!-- Added Content Sections for AdSense -->
+            <div class="additional-content">
+                <h3>Ideal Use Cases for Asana</h3>
+                <p>Asana is particularly well-suited for teams managing complex projects with multiple stages, dependencies, and stakeholders. Marketing teams leverage it for campaign planning, content calendars, and event coordination. Product and engineering teams use it to track development sprints, bug fixes, and feature launches using Board or Timeline views. Agencies rely on it to manage client projects, track billable hours (often via integrations), and maintain clear communication. Its strength lies in structured project management where clarity on tasks, deadlines, and responsibilities is paramount for success.</p>
+
+                <h3>Getting Started: Download & Setup</h3>
+                <p>Asana is primarily a web-based application, but offers mobile apps for on-the-go access:</p>
+                <ul>
+                    <li><strong>Web App:</strong> Simply sign up for an account (Free, Premium, Business) on the Asana website (asana.com). No download is required for the core web experience.</li>
+                    <li><strong>Mobile Apps (iOS/Android):</strong> Download the free Asana app from the Apple App Store or Google Play Store. Log in with your account to access your projects and tasks.</li>
+                    <li><strong>Desktop App (Optional):</strong> While less common, Asana does offer desktop apps for Windows and macOS, providing a slightly more native experience than the web app. These can be downloaded from Asana's website.</li>
+                </ul>
+                <p>Setup involves creating a workspace or joining an existing one, setting up your first project (using templates can be helpful), inviting team members, and start creating and assigning tasks.</p>
+
+                <h3>Asana User Tips for Enhanced Productivity</h3>
+                <ul>
+                    <li><strong>Utilize Project Templates:</strong> Don't reinvent the wheel. Asana offers numerous templates for common project types (e.g., event planning, onboarding, product launch). Start with a template and customize it.</li>
+                    <li><strong>Master My Tasks:</strong> Your "My Tasks" view is your personal command center. Use sorting and filtering (e.g., by due date, project) to prioritize your daily work effectively.</li>
+                    <li><strong>Leverage Custom Fields:</strong> On paid plans, custom fields (e.g., Priority Level, Estimated Hours, Status Phase) add crucial context to tasks beyond the defaults. Use them consistently.</li>
+                    <li><strong>Embrace Rules & Automation:</strong> Automate repetitive actions using Rules (paid plans). Examples: automatically assign tasks based on status changes, add followers when a task moves to a certain stage, or update custom fields when a due date approaches.</li>
+                    <li><strong>Integrate Wisely:</strong> Connect Asana with tools you already use (Slack, Gmail, Outlook, Teams, etc.) to streamline notifications and actions, reducing context switching.</li>
+                </ul>
+
+                <h3>Troubleshooting Common Asana Issues</h3>
+                <ul>
+                    <li><strong>Notification Overload:</strong> Fine-tune your notification settings in your profile. Unfollow projects or tasks you don't need constant updates on. Utilize the Inbox feature within Asana to manage updates instead of relying solely on email.</li>
+                    <li><strong>Difficulty Finding Tasks:</strong> Use Asana's powerful search function with filters (assignee, project, due date, custom fields). Save frequent searches for quick access. Ensure tasks are consistently assigned to projects.</li>
+                    <li><strong>Slow Performance (Web App):</strong> Clear your browser cache and cookies. Ensure your browser is up-to-date. Too many browser extensions can sometimes interfere; try disabling them temporarily.</li>
+                    <li><strong>Mobile App Sync Issues:</strong> Ensure you have a stable internet connection. Try logging out and back into the mobile app. Check for app updates in your respective app store.</li>
+                </ul>
+            </div>
+            <!-- End Added Content -->
+
         </section>
 
         <section class="related-software">
@@ -89,6 +118,47 @@
                 </div>
             </div>
         </section>
+
+        <!-- User Engagement Section -->
+        <section class="user-engagement content-section">
+            <hr>
+            <!-- Feedback Section -->
+            <div class="feedback-section">
+                <h4>Was this page helpful?</h4>
+                <button class="feedback-btn thumbs-up">👍</button>
+                <button class="feedback-btn thumbs-down">👎</button>
+                <span class="feedback-message" style="margin-left: 10px; display: none;">Thanks for your feedback!</span>
+            </div>
+            <hr>
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h2>Comments</h2>
+                <p>Share your experiences or ask a question!</p>
+                <!-- Placeholder for displaying comments -->
+                <div class="comments-display">
+                    <!-- Example comment (optional) -->
+                    <!--
+                    <div class="comment">
+                        <p><strong>User Name</strong> <span class="comment-date">- Jan 1, 2025</span></p>
+                        <p>Great summary, thanks!</p>
+                    </div>
+                    -->
+                </div>
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <h3>Leave a Comment</h3>
+                    <label for="comment-name">Name:</label><br>
+                    <input type="text" id="comment-name" name="name" required><br>
+                    <label for="comment-email">Email (optional, not displayed):</label><br>
+                    <input type="email" id="comment-email" name="email"><br>
+                    <label for="comment-text">Comment:</label><br>
+                    <textarea id="comment-text" name="comment" rows="4" required></textarea><br>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </section>
+        <!-- End User Engagement Section -->
+
     </main>
 
     <footer>

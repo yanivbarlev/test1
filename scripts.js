@@ -159,4 +159,90 @@ document.addEventListener('DOMContentLoaded', function() {
         
         createMobileMenu();
     });
+
+    // --- User Engagement Features --- 
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- Feedback Buttons --- 
+        const feedbackSection = document.querySelector('.feedback-section');
+        if (feedbackSection) {
+            const thumbsUpBtn = feedbackSection.querySelector('.thumbs-up');
+            const thumbsDownBtn = feedbackSection.querySelector('.thumbs-down');
+            const feedbackMessage = feedbackSection.querySelector('.feedback-message');
+
+            const handleFeedbackClick = (selectedBtn) => {
+                // Indicate selection
+                thumbsUpBtn.classList.remove('selected');
+                thumbsDownBtn.classList.remove('selected');
+                selectedBtn.classList.add('selected');
+                
+                // Disable buttons after click
+                thumbsUpBtn.disabled = true;
+                thumbsDownBtn.disabled = true;
+
+                // Show thank you message
+                if (feedbackMessage) {
+                    feedbackMessage.style.display = 'inline';
+                }
+            };
+
+            if (thumbsUpBtn) {
+                thumbsUpBtn.addEventListener('click', () => handleFeedbackClick(thumbsUpBtn));
+            }
+            if (thumbsDownBtn) {
+                thumbsDownBtn.addEventListener('click', () => handleFeedbackClick(thumbsDownBtn));
+            }
+        }
+
+        // --- Comment Form --- 
+        const commentForm = document.querySelector('.comment-form');
+        if (commentForm) {
+            const commentsDisplay = document.querySelector('.comments-display');
+            const noCommentsMessage = document.querySelector('.comments-section > p'); // The 'Be the first...' message
+
+            commentForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevent page reload
+
+                const nameInput = commentForm.querySelector('#comment-name');
+                const commentInput = commentForm.querySelector('#comment-text');
+                const name = nameInput.value.trim();
+                const commentText = commentInput.value.trim();
+
+                if (name && commentText && commentsDisplay) {
+                    // Hide the 'Be the first...' message if it's visible
+                    if (noCommentsMessage && window.getComputedStyle(noCommentsMessage).display !== 'none') {
+                        noCommentsMessage.style.display = 'none';
+                    }
+
+                    // Create new comment element
+                    const newComment = document.createElement('div');
+                    newComment.classList.add('comment');
+
+                    const authorInfo = document.createElement('p');
+                    const strong = document.createElement('strong');
+                    strong.textContent = name;
+                    const dateSpan = document.createElement('span');
+                    dateSpan.classList.add('comment-date');
+                    dateSpan.textContent = ` - ${new Date().toLocaleDateString()}`;
+                    authorInfo.appendChild(strong);
+                    authorInfo.appendChild(dateSpan);
+                    
+                    const commentContent = document.createElement('p');
+                    commentContent.textContent = commentText;
+
+                    newComment.appendChild(authorInfo);
+                    newComment.appendChild(commentContent);
+
+                    // Append to the display area
+                    commentsDisplay.appendChild(newComment);
+
+                    // Clear the form
+                    nameInput.value = '';
+                    commentInput.value = '';
+                    // Optionally clear email too, if needed
+                    // commentForm.querySelector('#comment-email').value = '';
+                }
+            });
+        }
+    });
 }); 

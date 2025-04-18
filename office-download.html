@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Microsoft Office - Productivity Suite | Upingi.com</title>
     <meta name="description" content="Download Microsoft Office, the world's leading productivity suite. Includes Word, Excel, PowerPoint, and more. Available for Windows and Mac.">
+
+    <!-- Schema.org Markup for Software Application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Microsoft Office / Microsoft 365",
+      "applicationCategory": "Productivity, BusinessApplication",
+      "operatingSystem": "Windows, macOS, iOS, Android, Web",
+      "description": "Download Microsoft Office, the world's leading productivity suite. Includes Word, Excel, PowerPoint, and more. Available via Microsoft 365 subscription.",
+      "image": "https://upingi.com/images/office.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Microsoft Corporation"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Microsoft Corporation"
+      },
+      "offers": {
+        "@type": "Offer",
+        // Price varies significantly based on plan (Personal, Family, Business)
+        // Setting a representative starting price or range might be appropriate 
+        // For simplicity, leaving price out or using '0' if focusing on free web apps
+        "price": "6.99", // Example starting price (Personal plan)
+        "priceCurrency": "USD",
+        "category": "Subscription-based (Microsoft 365)"
+      },
+      "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https://upingi.com/office-download.html"
+       }
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5092197082042333"
@@ -26,7 +61,7 @@
         <section class="software-details">
             <img src="images/office.png" alt="Microsoft Office suite icon">
             <h1>Microsoft Office</h1>
-            <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.microsoft.com/microsoft-365', '_blank')">Download Now</button>
+            <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.microsoft.com/microsoft-365', '_blank')">Download Now</button>
             
             <div class="software-info">
                 <p><strong>Category:</strong> Productivity</p>
@@ -61,7 +96,7 @@
 
         <section class="download-section">
             <h2>Download Microsoft Office</h2>
-            <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.microsoft.com/microsoft-365', '_blank')">Download Now</button>
+            <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.open('https://www.microsoft.com/microsoft-365', '_blank')">Download Now</button>
         </section>
 
         <section class="related-software">
@@ -70,25 +105,66 @@
                 <div class="software-item">
                     <img src="images/googledrive.png" alt="Google Drive Icon">
                     <h3>Google Drive</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='drive-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='drive-download.html'">GET</button>
                 </div>
                 <div class="software-item">
                     <img src="images/zoom.png" alt="Zoom Icon">
                     <h3>Zoom</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='zoom-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='zoom-download.html'">GET</button>
                 </div>
                 <div class="software-item">
                     <img src="images/slack.png" alt="Slack Icon">
                     <h3>Slack</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='slack-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='slack-download.html'">GET</button>
                 </div>
                 <div class="software-item">
                     <img src="images/trello.png" alt="Trello Icon">
                     <h3>Trello</h3>
-                    <button class="ad-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='trello-download.html'">GET</button>
+                    <button class="cta-button" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1234567890" onclick="window.location.href='trello-download.html'">GET</button>
                 </div>
             </div>
         </section>
+
+        <!-- User Engagement Section -->
+        <section class="user-engagement content-section">
+            <hr>
+            <!-- Feedback Section -->
+            <div class="feedback-section">
+                <h4>Was this page helpful?</h4>
+                <button class="feedback-btn thumbs-up">👍</button>
+                <button class="feedback-btn thumbs-down">👎</button>
+                <span class="feedback-message" style="margin-left: 10px; display: none;">Thanks for your feedback!</span>
+            </div>
+            <hr>
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h2>Comments</h2>
+                <p>Share your experiences or ask a question!</p>
+                <!-- Placeholder for displaying comments -->
+                <div class="comments-display">
+                    <!-- Example comment (optional) -->
+                    <!--
+                    <div class="comment">
+                        <p><strong>User Name</strong> <span class="comment-date">- Jan 1, 2025</span></p>
+                        <p>Great summary, thanks!</p>
+                    </div>
+                    -->
+                </div>
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <h3>Leave a Comment</h3>
+                    <label for="comment-name">Name:</label><br>
+                    <input type="text" id="comment-name" name="name" required><br>
+                    <label for="comment-email">Email (optional, not displayed):</label><br>
+                    <input type="email" id="comment-email" name="email"><br>
+                    <label for="comment-text">Comment:</label><br>
+                    <textarea id="comment-text" name="comment" rows="4" required></textarea><br>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </section>
+        <!-- End User Engagement Section -->
+
     </main>
 
     <footer>

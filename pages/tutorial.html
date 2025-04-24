@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Tutorial - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      /* background-color: #f8fafc; */
+    }
+    /* Style steps maybe? */
+    .tutorial-step h2::before {
+        /* content: 'Step ' counter(step-counter) ': ';
+        counter-increment: step-counter;
+        font-weight: bold; */
+    }
+    /* Adjust code block colors for dark background */
+    .prose-invert pre {
+        background-color: #1e293b; /* slate-800 */
+        color: #e2e8f0; /* slate-200 */
+    }
+    .prose-invert code {
+        color: #f8fafc; /* slate-50 */
+    }
+    .prose-invert pre code {
+        color: inherit; /* Inherit from pre */
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+     <div class="container mx-auto flex justify-between items-center">
+       <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+       <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+         <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+         <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+         <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+         <li><a href="tutorials.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Tutorials</a></li> <!-- Active Link Style -->
+         <li><a href="guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+       </ul>
+        <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+         </button>
+     </div>
+   </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-slate-700 to-slate-900 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Placeholder Tutorial Title</h1>
+            <p class="lead text-slate-300 !text-xl !mb-6">Learn how to achieve [Task] using [Software] with this easy-to-follow, step-by-step tutorial.</p>
+            <p class="text-sm text-slate-400">By Upingi Team / Published on [Date]</p>
+          </article>
+        </div>
+
+        <!-- Prerequisites Section -->
+        <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h2 class="!text-3xl font-bold !mb-6 text-white">Prerequisites</h2>
+            <p>Before you begin, make sure you have the following:</p>
+            <ul>
+              <li>Prerequisite 1: [Software name, link if possible].</li>
+              <li>Prerequisite 2: [Account, setting, or specific version].</li>
+              <li>Prerequisite 3: [Any other necessary setup].</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Step 1 Section -->
+        <section class="bg-gradient-to-r from-rose-500 to-pink-600 text-white p-8 rounded-xl shadow-lg tutorial-step">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h2 class="!text-3xl font-bold !mb-6 text-white">Step 1: [Action Description]</h2>
+            <p>Detailed instructions for the first step. Explain clearly what needs to be done and why.</p>
+            <img src="../assets/placeholder-step1-screenshot.png" alt="Screenshot illustrating Step 1" class="rounded-lg shadow-md my-6 aspect-video object-cover"> <!-- Placeholder image -->
+            <p>Additional details or explanation for step 1, if needed.</p>
+          </article>
+        </section>
+
+        <!-- Step 2 Section -->
+        <section class="bg-gradient-to-r from-amber-500 to-orange-600 text-white p-8 rounded-xl shadow-lg tutorial-step">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h2 class="!text-3xl font-bold !mb-6 text-white">Step 2: [Another Action]</h2>
+            <p>Instructions for the second step. Reference the previous step if necessary.</p>
+            <!-- Optional: Code block example -->
+            <pre class="!bg-slate-800 !text-slate-200"><code class="language-bash"># Example code block if needed
+echo "Running step 2 command..."
+</code></pre>
+             <!-- <img src="../assets/placeholder-step2-screenshot.png" alt="Screenshot illustrating Step 2" class="rounded-lg shadow-md my-6 aspect-video object-cover"> --> <!-- Placeholder image REMOVED -->
+          </article>
+        </section>
+
+        <!-- Step 3 Section -->
+        <section class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white p-8 rounded-xl shadow-lg tutorial-step">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h2 class="!text-3xl font-bold !mb-6 text-white">Step 3: [Final Action]</h2>
+            <p>Instructions for the final primary step.</p>
+            <!-- <img src="../assets/placeholder-step3-screenshot.png" alt="Screenshot illustrating Step 3" class="rounded-lg shadow-md my-6 aspect-video object-cover"> --> <!-- Placeholder image REMOVED -->
+            <p>Verify the result or explain what to look for.</p>
+          </article>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-sky-500 to-indigo-600 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Conclusion</h2>
+             <p>Summary of what was accomplished in this tutorial. Briefly recap the main steps.</p>
+             <p>Next steps or links to related tutorials/guides:</p>
+             <ul>
+                <li><a href="#" class="hover:underline">Advanced Tutorial on [Topic]</a></li>
+                <li><a href="../pages/guides.html" class="hover:underline">Explore Related Guides</a></li>
+             </ul>
+           </article>
+        </section>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Related Content Card -->
+         <div class="bg-gradient-to-r from-blue-600 to-violet-600 text-white p-6 rounded-xl shadow-lg sticky top-24">
+           <h3 class="text-xl font-semibold mb-5 border-b border-blue-400 pb-3 text-white">Related Tutorials</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-blue-200 hover:underline hover:text-white font-medium">Beginner Tutorial for [Software]</a></li>
+            <li><a href="#" class="text-blue-200 hover:underline hover:text-white font-medium">Advanced [Software] Techniques</a></li>
+            <li><a href="#" class="text-blue-200 hover:underline hover:text-white font-medium">Troubleshooting Common Issues</a></li>
+          </ul>
+         </div>
+         <!-- Table of Contents (Optional JS needed) -->
+         <!-- <div class="bg-white p-6 rounded-xl shadow-lg">
+           <h3 class="text-xl font-semibold mb-5 border-b pb-3 text-slate-800">Steps</h3>
+           <ul class="space-y-2 text-sm">
+            <li><a href="#step1-anchor" class="text-sky-600 hover:underline">Step 1: Action</a></li>
+             <li><a href="#step2-anchor" class="text-sky-600 hover:underline">Step 2: Another Action</a></li>
+            <li><a href="#step3-anchor" class="text-sky-600 hover:underline">Step 3: Final Action</a></li>
+           </ul>
+         </div> -->
+
+          <!-- Related Content Card -->
+         <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6 rounded-xl shadow-lg sticky top-80 prose prose-invert prose-sm max-w-none">
+            <h3 class="text-xl font-semibold mb-5 border-b border-purple-400 pb-3 text-white !mt-0">Related Content</h3>
+             <ul class="space-y-3 !my-0 !pl-0 !list-none">
+                 <li><a href="#" class="text-purple-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Review of [Software]</a></li>
+                 <li><a href="#" class="text-purple-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Guide on [Topic]</a></li>
+                 <li><a href="comparisons.html" class="text-purple-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Related Comparisons</a></li>
+             </ul>
+         </div>
+
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+ <footer class="bg-slate-800 text-slate-400 py-12 mt-16 border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="../pages/about.html" class="hover:text-white transition">About</a>
+        <a href="../pages/contact.html" class="hover:text-white transition">Contact</a>
+        <a href="../pages/privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="../pages/terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

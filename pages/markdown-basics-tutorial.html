@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Basics Tutorial - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+      <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+        <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+        <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+        <li><a href="tutorials.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Tutorials</a></li>
+        <li><a href="guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+      </ul>
+       <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-slate-700 to-gray-800 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Tutorial: Markdown Basics</h1>
+            <p class="lead text-slate-200 !text-xl !mb-6">Learn the simple syntax of Markdown for formatting text quickly and easily on the web.</p>
+            <p class="text-sm text-gray-300">By Upingi Team / Tutorial Level: Beginner</p>
+          </article>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 p-8 rounded-xl shadow-md border border-slate-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">What is Markdown?</h2>
+            <p>Markdown is a lightweight markup language with plain-text formatting syntax. It's designed to be easy to read and write, and it converts easily to HTML. It's commonly used for README files, documentation, forum posts, and more.</p>
+            <img src="../images/markdown-logo.png" >
+            <p>Mastering basic Markdown makes writing formatted text for the web incredibly efficient.</p>
+          </article>
+        </section>
+
+        <!-- Prerequisites Section -->
+        <section class="bg-gradient-to-r from-yellow-100 to-amber-200 text-slate-700 p-8 rounded-xl shadow-md border border-yellow-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Prerequisites</h2>
+             <ul class="!list-disc !pl-5 space-y-2">
+               <li><strong>Text Editor:</strong> Any plain text editor will work (Notepad, TextEdit, VS Code, etc.).</li>
+               <li><strong>Markdown Previewer (Optional):</strong> Many editors have built-in previews, or you can use online tools.</li>
+             </ul>
+             <p>Let's start formatting!</p>
+           </article>
+         </section>
+
+        <!-- Chapter 1: Basic Formatting -->
+        <section class="bg-gradient-to-r from-sky-100 to-blue-200 text-slate-700 p-8 rounded-xl shadow-md border border-sky-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 1: Headings, Emphasis, and Lists</h2>
+            <p>Learn the most common formatting elements.</p>
+            <pre><code class="language-markdown"># Heading 1
+## Heading 2
+### Heading 3
+
+*This text will be italic.*
+_This will also be italic._
+
+**This text will be bold.**
+__This will also be bold.__
+
+_You **can** combine them._
+
+Unordered List:
+* Item 1
+* Item 2
+  * Sub-item
+
+Ordered List:
+1. First item
+2. Second item
+3. Third item</code></pre>
+            <p>Type these examples into your editor and see the preview.</p>
+          </article>
+        </section>
+
+        <!-- Chapter 2: Links, Images, Code -->
+        <section class="bg-gradient-to-r from-green-100 to-emerald-200 text-slate-700 p-8 rounded-xl shadow-md border border-green-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 2: Links, Images, and Code</h2>
+             <p>Markdown provides simple syntax for other essential web elements:</p>
+             <p><strong>Links:</strong> Wrap the link text in square brackets `[]` and the URL in parentheses `()`. You can optionally add a title in quotes within the parentheses.</p>
+             <pre><code class="language-markdown">[Visit Upingi.com](https://www.upingi.com)
+[Upingi](https://www.upingi.com "Upingi Homepage")</code></pre>
+
+             <p class="mt-4"><strong>Images:</strong> Similar to links, but start with an exclamation mark `!`. The text in brackets becomes the alt text.</p>
+             <pre><code class="language-markdown">![Alt text for the image](/path/to/your/image.jpg)
+![Upingi Logo](../images/logo.png "The Upingi Logo")</code></pre>
+
+             <p class="mt-4"><strong>Inline Code:</strong> Wrap code snippets within a sentence using single backticks `` ` ``.</p>
+             <pre><code class="language-markdown">Use the `git clone` command to copy a repository.</code></pre>
+
+             <p class="mt-4"><strong>Code Blocks:</strong> For longer code examples, fence them with triple backticks ```. You can add a language identifier after the opening backticks for syntax highlighting in many Markdown renderers.</p>
+             <pre><code class="language-markdown">```javascript
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("World");
+```</code></pre>
+
+             <p class="mt-4"><strong>Blockquotes:</strong> Start a line with `>`.</p>
+             <pre><code class="language-markdown">> This is a blockquote. It can span multiple lines.
+> > Nested blockquotes are also possible.</code></pre>
+
+             <p class="mt-4"><strong>Horizontal Rules:</strong> Create a thematic break with three or more hyphens `---`, asterisks `***`, or underscores `___` on a line by themselves.</p>
+             <pre><code class="language-markdown">Section 1
+
+---
+
+Section 2</code></pre>
+           </article>
+         </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-pink-100 to-rose-200 text-slate-700 p-8 rounded-xl shadow-md border border-pink-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Conclusion & Next Steps</h2>
+             <p>You now know the fundamental syntax of Markdown for creating well-formatted text documents quickly. It's a valuable skill for documentation, notes, and online communication.</p>
+             <p>Keep practicing:</p>
+             <ul class="!list-disc !pl-5 space-y-2">
+                <li>Write a README file for a project using Markdown.</li>
+                <li>Explore extended Markdown syntax (like tables, footnotes, task lists - support varies).</li>
+                <li>Use Markdown in platforms like GitHub, Reddit, or note-taking apps.</li>
+             </ul>
+              <div class="mt-6 space-x-4">
+                <a href="git-github-basics-tutorial.html" class="inline-block bg-pink-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-700 transition shadow-sm">Learn Git & GitHub</a>
+                <a href="guides.html" class="inline-block bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-rose-700 transition shadow-sm">Read Documentation Guides</a>
+              </div>
+           </article>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Key Syntax Card -->
+        <div class="bg-gradient-to-r from-gray-800 to-black text-white p-6 rounded-xl shadow-lg sticky top-24 prose prose-invert prose-sm max-w-none">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-600 pb-3 text-white !mt-0">Key Markdown Syntax</h3>
+           <ul class="text-sm space-y-1 text-slate-200 !my-0 !pl-0 !list-none font-mono">
+              <li>`# H1`, `## H2`</li>
+              <li>`*italic*`, `_italic_`</li>
+              <li>`**bold**`, `__bold__`</li>
+              <li>`* item`, `- item`</li>
+              <li>`1. item`</li>
+              <li>`[text](url)`</li>
+              <li>`![alt](img_url)`</li>
+              <li>`` `code` ``</li>
+              <li>```` ```code block``` ````</li>
+              <li>`> blockquote`</li>
+              <li>`---`</li>
+           </ul>
+        </div>
+         <!-- Related Content Card -->
+         <div class="bg-gradient-to-r from-slate-600 to-gray-700 text-white p-6 rounded-xl shadow-lg prose prose-invert prose-sm max-w-none">
+           <h3 class="text-xl font-semibold mb-5 border-b border-slate-400 pb-3 text-white !mt-0">Related Content</h3>
+           <ul class="space-y-3 !my-0 !pl-0 !list-none">
+             <li><a href="git-github-basics-tutorial.html" class="text-gray-300 hover:underline hover:text-white font-medium no-underline hover:no-underline">Git & GitHub Basics</a></li>
+             <li><a href="#" class="text-gray-300 hover:underline hover:text-white font-medium no-underline hover:no-underline">Writing Good Documentation</a></li>
+             <li><a href="tutorials.html" class="text-gray-300 hover:underline hover:text-white font-medium no-underline hover:no-underline">More Developer Tools</a></li>
+           </ul>
+         </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

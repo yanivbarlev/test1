@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide: Optimizing Website Performance - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+     <div class="container mx-auto flex justify-between items-center">
+       <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+       <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+         <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+         <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+         <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+         <li><a href="tutorials.html" class="hover:text-sky-600 transition">Tutorials</a></li>
+         <li><a href="guides.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Guides</a></li>
+       </ul>
+        <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+         </button>
+     </div>
+   </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-lime-700 to-green-800 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Guide: Optimizing Website Performance</h1>
+            <p class="lead text-lime-200 !text-xl !mb-6">Improve loading speed, user experience, and SEO rankings with this guide to essential web performance optimization techniques.</p>
+            <p class="text-sm text-lime-300">By Upingi Team / Published on May 18, 2025</p>
+          </article>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 p-8 rounded-xl shadow-md border border-slate-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Introduction: The Need for Speed</h2>
+            <p>Placeholder: Explain why website performance matters (user experience, bounce rates, conversion rates, SEO). Introduce key performance metrics (e.g., First Contentful Paint, Largest Contentful Paint, Time to Interactive).</p>
+            <img src="../images/website-performance-guide.jpg" alt="Speedometer indicating fast website performance" class="rounded-lg shadow-md my-6 aspect-video object-cover">
+            <p>Placeholder: State the goal: to cover fundamental optimization strategies applicable to most websites.</p>
+          </article>
+        </section>
+
+        <!-- Image Optimization Section -->
+        <section class="bg-gradient-to-r from-amber-500 to-orange-600 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 1: Optimize Images</h2>
+            <p>Placeholder: Explain that images are often the largest assets. Discuss choosing the right format (JPEG, PNG, WebP, AVIF), compressing images effectively (lossy vs. lossless), and serving appropriately sized images (responsive images using `srcset`).</p>
+            <p>Placeholder: Mention lazy loading images that are below the fold.</p>
+             <img src="../images/webflow-review.jpg" alt="Example showing image compression" class="rounded-lg shadow-md my-6 aspect-video object-cover">
+          </article>
+        </section>
+
+        <!-- Minification & Compression Section -->
+        <section class="bg-gradient-to-r from-cyan-100 to-sky-200 text-slate-700 p-8 rounded-xl shadow-md border border-cyan-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-3xl font-bold !mb-6 !text-slate-800">Chapter 2: Minify & Compress Code</h2>
+            <p>Placeholder: Explain minification (removing whitespace, comments from HTML, CSS, JS) and its benefits. Discuss code splitting/bundling for JavaScript.</p>
+            <p>Placeholder: Introduce server-side compression (Gzip, Brotli) for reducing file sizes during transfer.</p>
+          </article>
+        </section>
+
+        <!-- Caching Section -->
+        <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 3: Leverage Browser Caching</h2>
+             <p>Placeholder: Explain how browser caching stores static assets locally to speed up subsequent visits. Discuss setting appropriate cache headers (`Cache-Control`, `Expires`) for different asset types.</p>
+           </article>
+        </section>
+
+        <!-- Reduce HTTP Requests Section -->
+        <section class="bg-gradient-to-r from-rose-400 to-pink-500 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 4: Reduce HTTP Requests</h2>
+             <p>Placeholder: Explain that each asset requires an HTTP request. Discuss techniques like combining CSS and JS files (though less critical with HTTP/2), using CSS sprites for small images, and avoiding unnecessary redirects.</p>
+           </article>
+         </section>
+
+         <!-- Server Response Time & CDN Section -->
+         <section class="bg-gradient-to-r from-purple-100 to-violet-200 text-slate-700 p-8 rounded-xl shadow-md border border-purple-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-3xl font-bold !mb-6 !text-slate-800">Chapter 5: Improve Server Response Time & Use a CDN</h2>
+             <p>Placeholder: Discuss optimizing server-side code, database queries, and choosing appropriate hosting. Introduce Content Delivery Networks (CDNs) for caching assets closer to users, reducing latency.</p>
+           </article>
+         </section>
+
+          <!-- Critical Rendering Path Section -->
+         <section class="bg-gradient-to-r from-teal-500 to-emerald-600 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 6: Optimize the Critical Rendering Path</h2>
+             <p>Placeholder: Briefly explain the critical rendering path. Discuss techniques like inlining critical CSS, deferring non-critical JavaScript (`defer`, `async`), and prioritizing above-the-fold content.</p>
+           </article>
+         </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-slate-600 to-gray-800 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Conclusion: Faster Sites, Happier Users</h2>
+             <p>Placeholder: Recap the key optimization areas. Emphasize that performance is crucial and requires ongoing monitoring and improvement. Mention performance testing tools (Lighthouse, PageSpeed Insights, WebPageTest).</p>
+              <div class="mt-6 space-x-4">
+                <a href="#" class="inline-block bg-slate-100 text-slate-800 font-semibold px-5 py-2 rounded-lg hover:bg-white transition shadow-sm">[Placeholder: Performance Testing Tools Link]</a>
+                <a href="guides.html" class="inline-block bg-gray-200 text-gray-800 font-semibold px-5 py-2 rounded-lg hover:bg-white transition shadow-sm">More Web Dev Guides</a>
+              </div>
+           </article>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Optimization Areas Card (Sticky) -->
+        <div class="bg-gradient-to-r from-lime-800 to-green-900 text-white p-6 rounded-xl shadow-lg sticky top-24 prose prose-invert prose-sm max-w-none">
+          <h3 class="text-xl font-semibold mb-5 border-b border-lime-600 pb-3 text-white !mt-0">Key Optimization Areas</h3>
+           <ul class="text-sm space-y-1 text-slate-200 !my-0 !pl-0 !list-none">
+              <li>🖼️ Optimize Images</li>
+              <li>📦 Minify & Compress Code</li>
+              <li>💾 Leverage Caching</li>
+              <li>📉 Reduce HTTP Requests</li>
+              <li>⏱️ Improve Server Response</li>
+              <li>🌐 Use a CDN</li>
+              <li>🚀 Optimize Critical Path</li>
+              <li>📊 Monitor & Test</li>
+           </ul>
+        </div>
+         <!-- Related Content Card (Not Sticky) -->
+         <div class="bg-gradient-to-r from-amber-700 to-orange-800 text-white p-6 rounded-xl shadow-lg prose prose-invert prose-sm max-w-none">
+           <h3 class="text-xl font-semibold mb-5 border-b border-amber-500 pb-3 text-white !mt-0">Related Content</h3>
+           <ul class="space-y-3 !my-0 !pl-0 !list-none">
+             <li><a href="css-grid-guide.html" class="text-amber-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">CSS Grid Guide</a></li>
+             <li><a href="#" class="text-amber-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">[Placeholder: Core Web Vitals Explained]</a></li>
+             <li><a href="tutorials.html" class="text-amber-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Web Dev Tutorials</a></li>
+           </ul>
+         </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Basics Tutorial - Upingi.com</title>
+  <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+      <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+        <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+        <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+        <li><a href="tutorials.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Tutorials</a></li>
+        <li><a href="guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+      </ul>
+       <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Tutorial: Docker Basics</h1>
+            <p class="lead text-blue-100 !text-xl !mb-6">Learn the fundamentals of containerization with Docker. Package your applications and dependencies easily.</p>
+            <p class="text-sm text-blue-200">By Upingi Team / Tutorial Level: Beginner</p>
+          </article>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 p-8 rounded-xl shadow-md border border-slate-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Why Learn Docker?</h2>
+            <p>Docker simplifies development and deployment by packaging applications and their environments into portable containers. This ensures consistency across different machines and stages (development, testing, production).</p>
+            <img src="../images/docker-basics-tutorial.jpg">
+            <p>Understanding Docker is essential for modern software development workflows, DevOps practices, and efficient application deployment.</p>
+          </article>
+        </section>
+
+        <!-- Prerequisites Section -->
+        <section class="bg-gradient-to-r from-yellow-100 to-amber-200 text-slate-700 p-8 rounded-xl shadow-md border border-yellow-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Prerequisites</h2>
+             <ul class="!list-disc !pl-5 space-y-2">
+               <li><strong>Install Docker Desktop:</strong> Download and install Docker Desktop for your OS from the <a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">official Docker website</a>.</li>
+               <li><strong>Basic Command Line Familiarity:</strong> Understanding basic terminal commands is helpful.</li>
+             </ul>
+             <p>Let's dive into containerization!</p>
+           </article>
+         </section>
+
+        <!-- Chapter 1: Images and Containers -->
+        <section class="bg-gradient-to-r from-sky-100 to-blue-200 text-slate-700 p-8 rounded-xl shadow-md border border-sky-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 1: Understanding Images & Containers</h2>
+            <p>Docker revolves around images (blueprints) and containers (running instances of images).</p>
+            <ol class="!list-decimal !pl-5 space-y-3">
+              <li><strong>Pull an Image:</strong> Fetch a pre-built image from Docker Hub. Run `docker pull hello-world`.</li>
+              <li><strong>List Images:</strong> See the images you have locally: `docker images`.</li>
+              <li><strong>Run a Container:</strong> Create and start a container from an image: `docker run hello-world`. This executes the default command in the container.</li>
+              <li><strong>List Running Containers:</strong> View currently active containers: `docker ps`.</li>
+              <li><strong>List All Containers:</strong> View all containers, including stopped ones: `docker ps -a`.</li>
+              <li><strong>Remove a Container:</strong> Clean up stopped containers: `docker rm <container_id_or_name>`.</li>
+              <li><strong>Remove an Image:</strong> Remove an image you no longer need: `docker rmi hello-world`.</li>
+            </ol>
+            <p>You've successfully pulled an image and run your first container!</p>
+          </article>
+        </section>
+
+        <!-- Chapter 2: Building Your Own Image -->
+        <section class="bg-gradient-to-r from-green-100 to-emerald-200 text-slate-700 p-8 rounded-xl shadow-md border border-green-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 2: Creating a Dockerfile</h2>
+             <p>To package your own applications, you create a `Dockerfile`. This is a text file containing instructions Docker uses to build an image.</p>
+             <p>Here's a breakdown of common instructions for a simple Node.js app (create a file named `Dockerfile`):</p>
+             <pre><code class="language-dockerfile"># Use an official Node.js runtime as a parent image
+FROM node:18-alpine
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install app dependencies
+RUN npm install
+
+# Bundle app source inside the Docker image
+COPY . .
+
+# Make port 8080 available to the world outside this container
+EXPOSE 8080
+
+# Define the command to run your app
+CMD [ "node", "server.js" ]</code></pre>
+             <ul class="!list-disc !pl-5 space-y-2 mt-4">
+                <li><strong>`FROM`</strong>: Specifies the base image to use.</li>
+                <li><strong>`WORKDIR`</strong>: Sets the working directory for subsequent instructions.</li>
+                <li><strong>`COPY`</strong>: Copies files or directories from your local machine into the container image.</li>
+                <li><strong>`RUN`</strong>: Executes commands (like installing dependencies) during the image build process.</li>
+                <li><strong>`EXPOSE`</strong>: Informs Docker that the container will listen on the specified network ports at runtime (doesn't actually publish the port).</li>
+                <li><strong>`CMD`</strong>: Provides the default command to execute when a container starts from this image.</li>
+             </ul>
+             <p class="mt-4"><strong>Build the image:</strong> Navigate to the directory containing your `Dockerfile` and run `docker build -t my-node-app .` (The `-t` tags the image with a name, and `.` indicates the build context is the current directory).</p>
+             <p><strong>Run your custom container:</strong> Start a container from your new image: `docker run -p 4000:8080 -d my-node-app`. The `-p 4000:8080` maps port 4000 on your host to port 8080 in the container, and `-d` runs it in detached mode (background).</p>
+           </article>
+         </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-pink-100 to-rose-200 text-slate-700 p-8 rounded-xl shadow-md border border-pink-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Conclusion & Next Steps</h2>
+             <p>You've taken your first steps with Docker, understanding images, containers, and the basic commands to manage them. This foundation allows you to start containerizing applications.</p>
+             <p>Next steps could include:</p>
+             <ul class="!list-disc !pl-5 space-y-2">
+                <li>Learning about Docker Compose for multi-container applications.</li>
+                <li>Exploring Docker volumes for persistent data.</li>
+                <li>Understanding Docker networking concepts.</li>
+                <li>Pushing your custom images to Docker Hub or other registries.</li>
+             </ul>
+              <div class="mt-6 space-x-4">
+                <a href="comparisons.html" class="inline-block bg-pink-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-700 transition shadow-sm">Compare Deployment Tools</a>
+                <a href="guides.html" class="inline-block bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-rose-700 transition shadow-sm">Read DevOps Guides</a>
+              </div>
+           </article>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Key Commands Card -->
+        <div class="bg-gradient-to-r from-gray-800 to-black text-white p-6 rounded-xl shadow-lg sticky top-24 prose prose-invert prose-sm max-w-none">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-600 pb-3 text-white !mt-0">Key Docker Commands</h3>
+           <ul class="text-sm space-y-1 text-slate-200 !my-0 !pl-0 !list-none font-mono">
+              <li>`docker pull <image>`</li>
+              <li>`docker images`</li>
+              <li>`docker run <image>`</li>
+              <li>`docker ps` / `docker ps -a`</li>
+              <li>`docker stop <container>`</li>
+              <li>`docker rm <container>`</li>
+              <li>`docker rmi <image>`</li>
+              <li>`docker build -t <tag> .`</li>
+              <li>`docker logs <container>`</li>
+              <li>`docker exec -it <container> <cmd>`</li>
+           </ul>
+        </div>
+         <!-- Related Content Card -->
+         <div class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white p-6 rounded-xl shadow-lg prose prose-invert prose-sm max-w-none">
+           <h3 class="text-xl font-semibold mb-5 border-b border-blue-400 pb-3 text-white !mt-0">Related Content</h3>
+           <ul class="space-y-3 !my-0 !pl-0 !list-none">
+             <li><a href="git-github-basics-tutorial.html" class="text-sky-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Git & GitHub Basics</a></li>
+             <li><a href="guides.html" class="text-sky-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">DevOps Guides</a></li>
+             <li><a href="tutorials.html" class="text-sky-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">More Tutorials</a></li>
+           </ul>
+         </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <!--
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      -->
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

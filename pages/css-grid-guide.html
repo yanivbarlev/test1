@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide: Mastering CSS Grid Layout - Upingi.com</title>
+  <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+     <div class="container mx-auto flex justify-between items-center">
+       <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+       <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+         <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+         <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+         <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+         <li><a href="tutorials.html" class="hover:text-sky-600 transition">Tutorials</a></li>
+         <li><a href="guides.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Guides</a></li> <!-- Active Link -->
+       </ul>
+        <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+         </button>
+     </div>
+   </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-teal-700 to-cyan-800 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Guide: Mastering CSS Grid Layout</h1>
+            <p class="lead text-teal-200 !text-xl !mb-6">Unlock the power of two-dimensional layouts with this comprehensive guide to CSS Grid. From basic concepts to advanced techniques, build complex and responsive designs with ease.</p>
+            <p class="text-sm text-teal-300">By Upingi Team / Published on October 26, 2024</p>
+          </article>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 p-8 rounded-xl shadow-md border border-slate-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Introduction: Why CSS Grid?</h2>
+            <p>CSS Grid Layout is a powerful two-dimensional layout system for the web. Unlike older methods like floats or Flexbox (which is primarily one-dimensional), Grid excels at creating complex layouts involving both rows and columns simultaneously, making tasks like aligning items in complex structures much simpler and more intuitive.</p>
+            <img src="../images/css-grid-guide.jpg" alt="Abstract visual representing CSS Grid layout" class="rounded-lg shadow-md my-6 aspect-video object-cover">
+            <p>This guide aims to take you from the fundamental building blocks of CSS Grid to practical application, equipping you with the knowledge to create sophisticated, responsive web layouts with confidence.</p>
+          </article>
+        </section>
+
+        <!-- Core Concepts Section -->
+        <section class="bg-gradient-to-r from-blue-500 to-sky-600 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 1: Core Concepts</h2>
+            <p>To understand Grid, familiarize yourself with these terms: <strong>Grid Container</strong> (the element with `display: grid`), <strong>Grid Items</strong> (direct children of the container), <strong>Grid Lines</strong> (the dividing lines forming the grid structure), <strong>Tracks</strong> (the space between two adjacent grid lines, forming columns or rows), <strong>Gutters</strong> (the space between tracks, defined by `gap`), <strong>Grid Cells</strong> (the intersection of a row and column track), and <strong>Grid Areas</strong> (a rectangular space covering one or more grid cells, often defined by named lines or `grid-template-areas`).</p>
+            <pre class="bg-black/30 rounded-lg p-4 text-sm my-4"><code class="language-css">.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Example */
+  grid-template-rows: auto 100px;    /* Example */
+  gap: 1rem;                   /* Example */
+}</code></pre>
+            <p>Imagine a spreadsheet; the container is the whole sheet, items are content in cells, lines define rows/columns, tracks *are* the rows/columns, gutters are the spacing, cells are individual cells, and areas could be merged cells.</p>
+          </article>
+        </section>
+
+        <!-- Defining Grid Structure Section -->
+        <section class="bg-gradient-to-r from-indigo-500 to-violet-600 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 2: Defining Grid Structure</h2>
+            <p>`grid-template-columns` and `grid-template-rows` define the size and number of your grid tracks. You can use fixed units (`px`), relative units (`%`, `fr` - fractional unit representing a fraction of available space), `auto` (size based on content), `minmax(min, max)` for flexible tracks, and the `repeat(count, size)` function for defining repetitive patterns efficiently.</p>
+            <p>An <strong>explicit grid</strong> is defined by `grid-template-columns/rows`. An <strong>implicit grid</strong> is created automatically when you place items outside the bounds of the explicit grid or when `grid-auto-rows/columns` properties are set.</p>
+             <img src="../images/placeholder-guide-grid-structure.jpg" alt="Visual showing grid tracks and sizing" class="rounded-lg shadow-md my-6 aspect-video object-cover">
+          </article>
+        </section>
+
+        <!-- Placing Items Section -->
+        <section class="bg-gradient-to-r from-purple-500 to-pink-600 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 3: Placing Grid Items</h2>
+             <p>Place items precisely using line numbers. `grid-column-start` / `grid-column-end` define horizontal placement, and `grid-row-start` / `grid-row-end` define vertical placement. The shorthands `grid-column` and `grid-row` combine start/end values (e.g., `grid-column: 1 / 3`). Use `span N` to make an item span N tracks.</p>
+             <p>You can name grid lines using square brackets in `grid-template-columns/rows` (e.g., `[col-start] 1fr [col-end]`) and place items referencing these names. Alternatively, `grid-template-areas` allows you to name regions of the grid and assign items to those named areas visually.</p>
+             <p>The `grid-auto-flow` property controls how items that are not explicitly placed (auto-placed items) fill the grid. Default is `row`, filling rows first. Set to `column` to fill columns first, or `dense` to attempt to fill holes earlier in the grid.</p>
+           </article>
+        </section>
+
+        <!-- Alignment Section -->
+        <section class="bg-gradient-to-r from-rose-500 to-red-600 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 4: Alignment</h2>
+             <p>Align items *within* their grid cell using `justify-self` (horizontal) and `align-self` (vertical). Align the *entire grid* within its container using `justify-content` (horizontal) and `align-content` (vertical, applies when grid tracks are smaller than the container). Shorthands `place-items` (`align-items` / `justify-items`) and `place-content` (`align-content` / `justify-content`) simplify alignment declarations.</p>
+           </article>
+         </section>
+
+         <!-- Advanced Topics Section (Placeholder) -->
+         <section class="bg-gradient-to-r from-orange-500 to-amber-600 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Chapter 5: Advanced Techniques</h2>
+             <p>CSS Grid integrates seamlessly with <strong>media queries</strong> for responsive designs. You can <strong>nest grids</strong> (a grid item can become a grid container). Consider <strong>accessibility</strong>: ensure logical source order and test with screen readers. Grid is for two-dimensional layout; <strong>Flexbox</strong> is often better for one-dimensional layout (like navigation bars or component distribution along one axis).</p>
+           </article>
+         </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-lime-500 to-green-600 text-white p-8 rounded-xl shadow-lg">
+           <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+             <h2 class="!text-3xl font-bold !mb-6 text-white">Conclusion: Build with Confidence</h2>
+             <p>CSS Grid provides unparalleled control over complex web layouts. By mastering its core concepts, structure definition, item placement, and alignment, you can build intricate and responsive designs more efficiently than ever before. Keep practicing, experiment with different properties, and consult resources like MDN for deeper dives.</p>
+              <div class="mt-6 space-x-4">
+                <a href="tutorials.html" class="inline-block bg-lime-100 text-lime-800 font-semibold px-5 py-2 rounded-lg hover:bg-white transition shadow-sm">Explore CSS Tutorials</a>
+                <a href="comparisons.html" class="inline-block bg-green-100 text-green-800 font-semibold px-5 py-2 rounded-lg hover:bg-white transition shadow-sm">Compare Frontend Tools</a>
+              </div>
+           </article>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Key Properties Card (Sticky) -->
+        <div class="bg-gradient-to-r from-teal-800 to-cyan-900 text-white p-6 rounded-xl shadow-lg sticky top-24 prose prose-invert prose-sm max-w-none">
+          <h3 class="text-xl font-semibold mb-5 border-b border-teal-600 pb-3 text-white !mt-0">Key Grid Properties</h3>
+           <ul class="text-sm space-y-1 text-slate-200 !my-0 !pl-0 !list-none font-mono">
+              <li>display: grid</li>
+              <li>grid-template-columns</li>
+              <li>grid-template-rows</li>
+              <li>gap / grid-gap</li>
+              <li>grid-column</li>
+              <li>grid-row</li>
+              <li>grid-template-areas</li>
+              <li>justify-items / align-items</li>
+              <li>justify-content / align-content</li>
+           </ul>
+        </div>
+         <!-- Related Content Card (Not Sticky) -->
+         <div class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-6 rounded-xl shadow-lg prose prose-invert prose-sm max-w-none">
+           <h3 class="text-xl font-semibold mb-5 border-b border-blue-500 pb-3 text-white !mt-0">Related Content</h3>
+           <ul class="space-y-3 !my-0 !pl-0 !list-none">
+             <li><a href="#" class="text-blue-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Learn About CSS Flexbox</a> <!-- Placeholder Link --></li>
+             <li><a href="#" class="text-blue-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Responsive Design Techniques</a> <!-- Placeholder Link --></li>
+             <li><a href="guides.html" class="text-blue-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">More Web Dev Guides</a></li>
+           </ul>
+         </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <!--
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      -->
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

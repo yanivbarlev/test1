@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic SQL Queries Tutorial - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+      <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+        <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+        <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+        <li><a href="tutorials.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Tutorials</a></li>
+        <li><a href="guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+      </ul>
+       <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Tutorial: Basic SQL Queries</h1>
+            <p class="lead text-orange-100 !text-xl !mb-6">Learn the fundamentals of SQL (Structured Query Language) to interact with databases.</p>
+            <p class="text-sm text-red-100">By Upingi Team / Tutorial Level: Beginner</p>
+          </article>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 p-8 rounded-xl shadow-md border border-slate-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Why Learn SQL?</h2>
+            <p>SQL is the standard language for managing and manipulating relational databases. It's essential for anyone working with data, including developers, data analysts, and database administrators.</p>
+            <img src="../images/sql-basics-tutorial.jpg">
+            <p>Knowing SQL allows you to retrieve, insert, update, and delete data effectively.</p>
+          </article>
+        </section>
+
+        <!-- Prerequisites Section -->
+        <section class="bg-gradient-to-r from-yellow-100 to-amber-200 text-slate-700 p-8 rounded-xl shadow-md border border-yellow-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Prerequisites</h2>
+             <ul class="!list-disc !pl-5 space-y-2">
+               <li><strong>Understanding of Databases (Conceptual):</strong> Basic idea of tables, rows, and columns.</li>
+               <li><strong>Access to a Database (Optional but Recommended):</strong> Use tools like DB Browser for SQLite, MySQL Workbench, pgAdmin, or online SQL fiddles (e.g., sqlfiddle.com) to practice.</li>
+             </ul>
+             <p>Let's query some data!</p>
+           </article>
+         </section>
+
+        <!-- Chapter 1: SELECT Statement -->
+        <section class="bg-gradient-to-r from-sky-100 to-blue-200 text-slate-700 p-8 rounded-xl shadow-md border border-sky-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 1: Retrieving Data with SELECT</h2>
+            <p>The `SELECT` statement is used to fetch data from one or more tables.</p>
+            <ol class="!list-decimal !pl-5 space-y-3">
+              <li><strong>Select All Columns:</strong> Retrieve all columns from a table: `SELECT * FROM customers;`.</li>
+              <li><strong>Select Specific Columns:</strong> Choose specific columns: `SELECT name, email FROM customers;`.</li>
+              <li><strong>Filtering with WHERE:</strong> Select rows based on a condition: `SELECT name FROM customers WHERE country = 'USA';`.</li>
+              <li><strong>Using Operators:</strong> Use operators like `=`, `>`, `<`, `>=`, `<=`, `!=` (or `<>`), `AND`, `OR`, `LIKE` (for pattern matching, e.g., `WHERE name LIKE 'J%'`).</li>
+              <li><strong>Ordering Results:</strong> Sort the output using `ORDER BY`: `SELECT name, city FROM customers ORDER BY city ASC;` (or `DESC`).</li>
+               <li><strong>Limiting Results:</strong> Restrict the number of rows returned: `SELECT * FROM products LIMIT 10;`.</li>
+            </ol>
+            <p>Practice these `SELECT` variations on a sample table.</p>
+          </article>
+        </section>
+
+        <!-- Chapter 2: INSERT, UPDATE, DELETE -->
+        <section class="bg-gradient-to-r from-green-100 to-emerald-200 text-slate-700 p-8 rounded-xl shadow-md border border-green-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 2: Modifying Data</h2>
+             <p>Besides retrieving data, SQL lets you add, change, and remove records.</p>
+             <p><strong>Adding Data with `INSERT INTO`:</strong></p>
+             <p>This statement adds a new row to a table. You specify the table, the columns to fill, and the corresponding values.</p>
+             <pre><code class="language-sql">-- Insert a new customer
+INSERT INTO customers (name, email, country)
+VALUES ('Charlie', 'charlie@email.com', 'Canada');
+
+-- If providing values for ALL columns in order, you can omit column names:
+INSERT INTO customers
+VALUES (4, 'David', 'david@email.com', 'UK'); -- Assuming ID is the first column</code></pre>
+
+             <p class="mt-4"><strong>Changing Data with `UPDATE`:</strong></p>
+             <p>This statement modifies existing rows in a table. You specify the table, the column(s) to change (`SET`), and crucially, *which* rows to change using a `WHERE` clause.</p>
+             <pre><code class="language-sql">-- Update Charlie's email
+UPDATE customers
+SET email = 'charlie.updated@email.com'
+WHERE name = 'Charlie';
+
+-- Update multiple columns for customers in the USA
+UPDATE customers
+SET country = 'United States'
+WHERE country = 'USA';</code></pre>
+             <p class="font-bold text-red-600">Warning: Omitting the `WHERE` clause in an `UPDATE` statement will modify *all* rows in the table!</p>
+
+             <p class="mt-4"><strong>Removing Data with `DELETE`:</strong></p>
+             <p>This statement removes existing rows from a table. Again, the `WHERE` clause is essential to specify *which* rows to delete.</p>
+             <pre><code class="language-sql">-- Delete the customer named David
+DELETE FROM customers
+WHERE name = 'David';</code></pre>
+             <p class="font-bold text-red-600">Warning: Omitting the `WHERE` clause in a `DELETE` statement will remove *all* rows from the table!</p>
+           </article>
+         </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-pink-100 to-rose-200 text-slate-700 p-8 rounded-xl shadow-md border border-pink-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Conclusion & Next Steps</h2>
+             <p>You now understand the basic SQL commands for querying (`SELECT`) and modifying data (`INSERT`, `UPDATE`, `DELETE`). This is the foundation for interacting with relational databases.</p>
+             <p>Further learning:</p>
+             <ul class="!list-disc !pl-5 space-y-2">
+                <li>Learn about aggregate functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`) and `GROUP BY`.</li>
+                <li>Explore `JOIN` operations to combine data from multiple tables.</li>
+                <li>Understand data types in SQL.</li>
+                <li>Learn about indexes for performance optimization.</li>
+                <li>Dive into specific database systems like PostgreSQL, MySQL, or SQLite.</li>
+             </ul>
+              <div class="mt-6 space-x-4">
+                <a href="reviews.html" class="inline-block bg-pink-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-700 transition shadow-sm">See Database Tool Reviews</a>
+                <a href="guides.html" class="inline-block bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-rose-700 transition shadow-sm">Read Data Management Guides</a>
+              </div>
+           </article>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Key SQL Keywords Card -->
+        <div class="bg-gradient-to-r from-gray-800 to-black text-white p-6 rounded-xl shadow-lg sticky top-24 prose prose-invert prose-sm max-w-none">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-600 pb-3 text-white !mt-0">Key SQL Keywords</h3>
+           <ul class="text-sm space-y-1 text-slate-200 !my-0 !pl-0 !list-none font-mono">
+              <li>`SELECT`</li>
+              <li>`FROM`</li>
+              <li>`WHERE`</li>
+              <li>`INSERT INTO`</li>
+              <li>`VALUES`</li>
+              <li>`UPDATE`</li>
+              <li>`SET`</li>
+              <li>`DELETE FROM`</li>
+              <li>`ORDER BY`</li>
+              <li>`LIMIT`</li>
+              <li>`AND`, `OR`, `LIKE`</li>
+           </ul>
+        </div>
+         <!-- Related Content Card -->
+         <div class="bg-gradient-to-r from-orange-600 to-red-700 text-white p-6 rounded-xl shadow-lg prose prose-invert prose-sm max-w-none">
+           <h3 class="text-xl font-semibold mb-5 border-b border-orange-400 pb-3 text-white !mt-0">Related Content</h3>
+           <ul class="space-y-3 !my-0 !pl-0 !list-none">
+             <li><a href="python-intro-tutorial.html" class="text-red-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Intro to Python (for DB interaction)</a></li>
+             <li><a href="guides.html" class="text-red-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Database Design Guides</a></li>
+             <li><a href="tutorials.html" class="text-red-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">More Data Tutorials</a></li>
+           </ul>
+         </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

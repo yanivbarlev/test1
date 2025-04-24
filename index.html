@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upingi.com - Software Reviews, Comparisons, Tutorials & Guides</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+     <div class="container mx-auto flex justify-between items-center">
+       <a href="index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+       <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+         <li><a href="index.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Home</a></li>
+         <li><a href="pages/reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+         <li><a href="pages/comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+         <li><a href="pages/tutorials.html" class="hover:text-sky-600 transition">Tutorials</a></li>
+         <li><a href="pages/guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+       </ul>
+        <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+         </button>
+     </div>
+   </nav>
+
+  <!-- Main Content Area -->
+  <div class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-sky-600 to-blue-700 text-white py-20 lg:py-32 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl lg:text-6xl font-extrabold mb-4 drop-shadow-md">Find the Right Software Tools</h1>
+        <p class="text-lg lg:text-2xl text-sky-100 mb-8 max-w-3xl mx-auto drop-shadow">In-depth reviews, side-by-side comparisons, practical tutorials, and expert guides to help you choose and master software.</p>
+        <div class="space-x-4">
+          <a href="pages/reviews.html" class="inline-block bg-white text-sky-700 font-semibold px-6 py-3 rounded-lg hover:bg-slate-100 transition shadow-md text-base lg:text-lg">Explore Reviews</a>
+          <a href="pages/guides.html" class="inline-block bg-sky-100/30 text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-100/40 transition shadow-md text-base lg:text-lg">Read Guides</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Content Sections -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="container mx-auto px-4 space-y-16">
+
+        <!-- Reviews Section -->
+        <div>
+          <h2 class="text-3xl font-bold text-center mb-4 text-slate-800">Explore Our Latest Reviews</h2>
+          <p class="text-center text-slate-600 max-w-2xl mx-auto mb-12">We don't just list features; we dissect them. Our review process involves rigorous hands-on testing and deep analysis to uncover the real-world performance and nuances that truly matter, cutting through the noise to deliver insights you can trust.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- Review Card 1 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/vs-code-review.jpg" alt="VS Code Logo" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-sky-700">VS Code Deep Dive</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">An in-depth look at Visual Studio Code's features, performance, extensive extension ecosystem, and why it dominates the editor market.</p>
+                <a href="pages/vs-code-review.html" class="inline-block mt-auto bg-sky-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-sky-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Review Card 2 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/sublime-text-review.jpg" alt="Sublime Text Logo" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-sky-700">Sublime Text Analysis</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Evaluating Sublime Text's legendary speed, powerful customization options, and its place in today's development landscape.</p>
+                <a href="pages/sublime-text-review.html" class="inline-block mt-auto bg-sky-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-sky-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Review Card 3 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/figma-review.jpg" alt="Figma Logo" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-sky-700">Figma Review: Collaboration King?</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Exploring Figma's strengths in team-based design workflows, real-time collaboration features, and its powerful prototyping capabilities.</p>
+                <a href="pages/figma-review.html" class="inline-block mt-auto bg-sky-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-sky-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Review Card 4 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/asana-review.jpg" alt="Asana Logo" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-sky-700">Asana Project Management Review</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Is Asana the right choice for your team's task and project management? Analyzing its features, integrations, and usability.</p>
+                <a href="pages/asana-review.html" class="inline-block mt-auto bg-sky-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-sky-700 transition">Read More</a>
+              </div>
+            </div>
+             <!-- Review Card 5 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/slack-review.jpg" alt="Slack Logo" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-sky-700">Slack Communication Platform Review</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Deep dive into Slack's channels, integrations, huddles, and overall effectiveness for modern team communication.</p>
+                <a href="pages/slack-review.html" class="inline-block mt-auto bg-sky-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-sky-700 transition">Read More</a>
+              </div>
+            </div>
+             <!-- Review Card 6 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/webflow-review.jpg" alt="Webflow Logo" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-sky-700">Webflow Review: Design Meets Development</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Can Webflow truly bridge the gap between visual design and clean, functional code? We investigate its capabilities.</p>
+                <a href="pages/webflow-review.html" class="inline-block mt-auto bg-sky-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-sky-700 transition">Read More</a>
+              </div>
+            </div>
+             <!-- Review Card 7 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/notion-review.jpg" alt="Notion Logo" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-sky-700">Notion: The All-in-One Workspace?</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Assessing Notion's flexibility, powerful database capabilities, and potential as a truly unified productivity hub for individuals and teams.</p>
+                <a href="pages/notion-review.html" class="inline-block mt-auto bg-sky-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-sky-700 transition">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="pages/reviews.html" class="inline-block text-sky-600 font-semibold hover:underline">View All Reviews &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Comparisons Section -->
+        <div>
+          <h2 class="text-3xl font-bold text-center mb-4 text-slate-800">Side-by-Side Comparisons</h2>
+          <p class="text-center text-slate-600 max-w-2xl mx-auto mb-12">Choosing software shouldn't be guesswork. We meticulously map features, benchmark performance in relevant scenarios, and evaluate user experience trade-offs, providing clarity and context to help you make informed decisions with confidence.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- Comparison Card 1 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/notion-vs-evernote.jpg" alt="Notion and Evernote Logos" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-purple-700">Notion vs. Evernote</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Comparing the features, usability, pricing, and ideal use cases of these two leading note-taking and knowledge management apps.</p>
+                <a href="pages/notion-vs-evernote.html" class="inline-block mt-auto bg-purple-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-purple-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Comparison Card 2 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/figma-vs-sketch.jpg" alt="Figma and Sketch Logos" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-purple-700">Figma vs. Sketch</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Which design tool reigns supreme? A detailed look at collaboration features, performance, plugin ecosystems, and platform availability.</p>
+                <a href="pages/figma-vs-sketch.html" class="inline-block mt-auto bg-purple-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-purple-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Comparison Card 3 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/zoom-vs-teams.jpg" alt="Zoom and Teams Logos" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-purple-700">Zoom vs. Teams</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Choosing the right video conferencing and collaboration tool for your team's communication and meeting needs.</p>
+                <a href="pages/zoom-vs-teams.html" class="inline-block mt-auto bg-purple-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-purple-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Comparison Card 4 -->
+             <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/figma-vs-webflow.jpg" alt="Figma and Webflow Logos" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-purple-700">Figma vs. Webflow</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Design tool vs. web builder. Understanding their distinct roles and how they can complement each other in the web creation process.</p>
+                <a href="pages/figma-vs-webflow.html" class="inline-block mt-auto bg-purple-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-purple-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Comparison Card 5 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/trello-review.jpg" alt="Trello and Asana Logos" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-purple-700">Trello vs. Asana: Kanban Choices</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Simple boards or powerful lists? Comparing Trello and Asana for different project tracking styles and team sizes.</p>
+                <a href="pages/asana-vs-trello.html" class="inline-block mt-auto bg-purple-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-purple-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Comparison Card 6 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/webflow-review.jpg" alt="Webflow and WordPress Logos" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-purple-700">Webflow vs. WordPress: Site Building</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Visual development power vs. the classic CMS giant. Which platform suits your website needs and technical skills best?</p>
+                <a href="pages/comparisons.html" class="inline-block mt-auto bg-purple-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-purple-700 transition">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="pages/comparisons.html" class="inline-block text-purple-600 font-semibold hover:underline">View All Comparisons &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Tutorials Section -->
+        <div>
+          <h2 class="text-3xl font-bold text-center mb-4 text-slate-800">Master Software with Tutorials</h2>
+           <p class="text-center text-slate-600 max-w-2xl mx-auto mb-12">Go beyond documentation. Our tutorials are crafted by practitioners, focusing on practical workflows and efficient techniques. We break down complex tasks into clear, actionable steps, empowering you to not just learn, but master.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- Tutorial Card 1 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/excel-budget-tutorial.jpg" alt="Excel spreadsheet with budget numbers" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Excel Budgeting Basics</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Learn how to create a simple yet effective personal budget spreadsheet using essential Microsoft Excel formulas and charts.</p>
+                <a href="pages/excel-budget-tutorial.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Tutorial Card 2 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/git-github-basics-tutorial.jpg" alt="Git and GitHub Logos side by side" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Git & GitHub Starter</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Your first practical steps with version control, covering essential Git commands and how to push your code to GitHub repositories.</p>
+                <a href="pages/git-github-basics-tutorial.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Tutorial Card 3 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/docker-basics-tutorial.jpg" alt="Docker whale logo" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Docker Fundamentals</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Grasp Docker images, containers, and basic commands to start leveraging the power of containerization for your projects.</p>
+                <a href="pages/docker-basics-tutorial.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+             <!-- Tutorial Card 4 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/python-intro-tutorial.jpg" alt="Python logo overlapping data charts" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Intro to Python for Data Science</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Learn the fundamental Python libraries like Pandas and NumPy needed for effective data manipulation and analysis tasks.</p>
+                <a href="pages/python-intro-tutorial.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Tutorial Card 5 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/css-grid-guide.jpg" alt="CSS code snippet showing keyframes" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Creating Animations with CSS</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A step-by-step guide to bringing your web pages to life using CSS transitions and keyframe animations.</p>
+                <a href="pages/css-flexbox-guide-tutorial.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Tutorial Card 6 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/nodejs.png" alt="Node.js logo" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Building a REST API with Node.js</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A practical walkthrough for setting up a simple, functional RESTful API using Node.js and the Express framework.</p>
+                <a href="pages/nodejs-fundamentals-tutorial.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Tutorial Card 7 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/figma-review.jpg" alt="Figma interface showing prototype links" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Figma Prototyping Essentials</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Master interactive prototyping techniques within Figma to create realistic user flows and compelling presentations.</p>
+                <a href="pages/figma-essentials-tutorial.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Tutorial Card 8 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/google-workspace-review.jpg" alt="Google Analytics 4 logo" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-green-700">Setting Up Google Analytics 4</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Navigate the new GA4 interface and successfully set up essential event tracking for your website analytics.</p>
+                <a href="pages/tutorials.html" class="inline-block mt-auto bg-green-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="pages/tutorials.html" class="inline-block text-green-600 font-semibold hover:underline">View All Tutorials &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Guides Section -->
+        <div>
+          <h2 class="text-3xl font-bold text-center mb-4 text-slate-800">In-Depth Guides</h2>
+          <p class="text-center text-slate-600 max-w-2xl mx-auto mb-12">Understanding the 'why' is as important as the 'how'. Our guides synthesize industry knowledge and expert perspectives, connecting the dots between tools, trends, and strategies to help you navigate the evolving tech landscape effectively.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- Guide Card 1 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/api-design-guide.jpg" alt="Abstract illustration of API connections" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-orange-700">API Design Principles</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">Learn the fundamental best practices for designing clear, consistent, maintainable, and easy-to-use APIs, focusing on REST conventions.</p>
+                <a href="pages/api-design-guide.html" class="inline-block mt-auto bg-orange-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-orange-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Guide Card 2 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/web-app-security-guide.jpg" alt="Digital security shield icon" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-orange-700">Web App Security Basics</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">An essential overview of common web vulnerabilities (like OWASP Top 10) and fundamental practices to secure your applications.</p>
+                <a href="pages/web-app-security-guide.html" class="inline-block mt-auto bg-orange-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-orange-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Guide Card 3 -->
+             <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/docker-beginner-guide.jpg" alt="Docker whale logo" class="w-full h-40 object-cover">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-orange-700">Docker for Beginners</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A foundational guide to understanding containers, images, Dockerfiles, and how Docker simplifies application deployment workflows.</p>
+                <a href="pages/docker-beginner-guide.html" class="inline-block mt-auto bg-orange-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-orange-700 transition">Read More</a>
+              </div>
+            </div>
+             <!-- Guide Card 4 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/guide.jpg" alt="Logos of React, Vue, Angular, Svelte" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-orange-700">Choosing a JavaScript Framework</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">React, Vue, Angular, Svelte? Understand the core differences, pros, and cons to pick the right framework for your next project.</p>
+                <a href="pages/javascript-frameworks-guide.html" class="inline-block mt-auto bg-orange-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-orange-700 transition">Read More</a>
+              </div>
+            </div>
+            <!-- Guide Card 5 -->
+            <div class="bg-slate-100 rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition">
+              <img src="images/legacy-migration-guide.jpg" alt="Diagram illustrating a CI/CD pipeline" class="w-full h-40 object-cover bg-slate-300">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-lg font-semibold mb-2 text-orange-700">Understanding CI/CD Pipelines</h3>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A guide to Continuous Integration and Continuous Delivery/Deployment concepts for automating your software development workflows.</p>
+                <a href="pages/guides.html" class="inline-block mt-auto bg-orange-600 text-white text-sm text-center font-semibold px-4 py-2 rounded-md hover:bg-orange-700 transition">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="pages/guides.html" class="inline-block text-orange-600 font-semibold hover:underline">View All Guides &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="pages/about.html" class="hover:text-white transition">About</a>
+        <a href="pages/contact.html" class="hover:text-white transition">Contact</a>
+        <a href="pages/privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="pages/terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <!-- 
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      -->
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

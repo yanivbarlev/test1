@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Guides - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      /* background-color: #f8fafc; */
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+     <div class="container mx-auto flex justify-between items-center">
+       <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+       <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+         <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+         <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+         <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+         <li><a href="tutorials.html" class="hover:text-sky-600 transition">Tutorials</a></li>
+         <li><a href="guides.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Guides</a></li> <!-- Active Link -->
+       </ul>
+        <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+         </button>
+     </div>
+   </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-12 text-center">Software Guides</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Guide Card: Choosing PM Tool -->
+      <a href="choosing-project-management-tool-guide.html" class="block group bg-gradient-to-br from-cyan-500 to-blue-600 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Choosing the Right PM Tool</h2>
+          <p class="text-cyan-100 text-sm mb-4">Find the perfect project management software for your team's needs and workflow.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-blue-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Guide Card: CSS Grid -->
+      <a href="css-grid-guide.html" class="block group bg-gradient-to-br from-teal-500 to-cyan-600 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Mastering CSS Grid Layout</h2>
+          <p class="text-teal-100 text-sm mb-4">Unlock the power of two-dimensional layouts with this comprehensive guide to CSS Grid.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-cyan-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Guide Card: Docker Beginner -->
+      <a href="docker-beginner-guide.html" class="block group bg-gradient-to-br from-blue-500 to-sky-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">A Beginner's Guide to Docker</h2>
+          <p class="text-blue-100 text-sm mb-4">Understand containers, images, and Dockerfiles to simplify application deployment.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-sky-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Guide Card: Cloud Providers -->
+      <a href="cloud-provider-comparison-guide.html" class="block group bg-gradient-to-br from-orange-500 to-amber-600 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Choosing Cloud Provider (AWS vs Azure vs GCP)</h2>
+          <p class="text-orange-100 text-sm mb-4">A high-level comparison of the big three cloud platforms.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-amber-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Guide Card: Web App Security -->
+      <a href="web-app-security-guide.html" class="block group bg-gradient-to-br from-red-600 to-pink-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Securing Your Web Application</h2>
+          <p class="text-red-100 text-sm mb-4">An overview of common vulnerabilities and essential security practices.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-pink-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Guide Card: Remote Collaboration -->
+      <a href="remote-collaboration-guide.html" class="block group bg-gradient-to-br from-purple-600 to-violet-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Effective Remote Team Collaboration</h2>
+          <p class="text-purple-100 text-sm mb-4">Tools, techniques, and mindset for productive and connected remote teams.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-violet-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Guide Card: API Design -->
+      <a href="api-design-guide.html" class="block group bg-gradient-to-br from-gray-600 to-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Intro to API Design Best Practices</h2>
+          <p class="text-gray-200 text-sm mb-4">Fundamental principles for designing clear, consistent, and easy-to-use APIs.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-slate-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Guide Card: Python Data Viz -->
+      <a href="python-data-viz-guide.html" class="block group bg-gradient-to-br from-emerald-600 to-teal-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Data Visualization with Python</h2>
+          <p class="text-emerald-100 text-sm mb-4">Explore Matplotlib, Seaborn, and Plotly to create insightful data visualizations.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-teal-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Guide Card: Web Performance -->
+      <a href="website-performance-guide.html" class="block group bg-gradient-to-br from-lime-600 to-green-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Optimizing Website Performance</h2>
+          <p class="text-lime-100 text-sm mb-4">Improve loading speed, user experience, and SEO rankings.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-green-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Guide Card: Legacy Migration -->
+      <a href="legacy-migration-guide.html" class="block group bg-gradient-to-br from-slate-600 to-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Migrating Legacy Systems</h2>
+          <p class="text-slate-200 text-sm mb-4">A strategic overview of planning and executing system modernization.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-gray-600 transition">Read Guide &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+ <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

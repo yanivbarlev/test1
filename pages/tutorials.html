@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Tutorials - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      /* background-color: #f8fafc; */
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+     <div class="container mx-auto flex justify-between items-center">
+       <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+       <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+         <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+         <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+         <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+         <li><a href="tutorials.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Tutorials</a></li> <!-- Active Link -->
+         <li><a href="guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+       </ul>
+        <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+         </button>
+     </div>
+   </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-12 text-center">Software Tutorials</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Tutorial Card: Git & GitHub -->
+      <a href="git-github-basics-tutorial.html" class="block group bg-gradient-to-br from-gray-700 to-black p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Getting Started with Git & GitHub</h2>
+          <p class="text-gray-300 text-sm mb-4">Learn the basics of version control and collaboration with Git & GitHub.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-gray-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Tutorial Card: Docker Basics -->
+      <a href="docker-basics-tutorial.html" class="block group bg-gradient-to-br from-blue-700 to-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Docker Basics</h2>
+          <p class="text-blue-100 text-sm mb-4">Learn the fundamentals of containerization with Docker.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-blue-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: Intro to Python -->
+      <a href="python-intro-tutorial.html" class="block group bg-gradient-to-br from-yellow-500 to-blue-500 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Introduction to Python</h2>
+          <p class="text-yellow-100 text-sm mb-4">Get started with Python, a versatile and beginner-friendly language.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-blue-600 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: Figma Essentials -->
+      <a href="figma-essentials-tutorial.html" class="block group bg-gradient-to-br from-purple-600 to-pink-500 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Figma Essentials</h2>
+          <p class="text-purple-100 text-sm mb-4">Learn the basics of Figma, the collaborative interface design tool.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-purple-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: CSS Flexbox Guide -->
+      <a href="css-flexbox-guide-tutorial.html" class="block group bg-gradient-to-br from-emerald-500 to-teal-600 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Mastering CSS Flexbox</h2>
+          <p class="text-emerald-100 text-sm mb-4">Create flexible and responsive layouts with CSS Flexbox.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-teal-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: Setting up VS Code -->
+      <a href="vscode-setup-tutorial.html" class="block group bg-gradient-to-br from-blue-600 to-indigo-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Setting Up VS Code</h2>
+          <p class="text-blue-100 text-sm mb-4">Configure VS Code for optimal productivity and workflow.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-indigo-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: Basic SQL Queries -->
+      <a href="sql-basics-tutorial.html" class="block group bg-gradient-to-br from-orange-500 to-red-600 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Basic SQL Queries</h2>
+          <p class="text-orange-100 text-sm mb-4">Learn the fundamentals of SQL to interact with databases.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-red-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: React Hooks Explained -->
+      <a href="react-hooks-tutorial.html" class="block group bg-gradient-to-br from-cyan-500 to-blue-600 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">React Hooks Explained</h2>
+          <p class="text-cyan-100 text-sm mb-4">Manage state and side effects in functional components.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-blue-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: Node.js Fundamentals -->
+      <a href="nodejs-fundamentals-tutorial.html" class="block group bg-gradient-to-br from-lime-600 to-green-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Node.js Fundamentals</h2>
+          <p class="text-lime-100 text-sm mb-4">Build server-side applications with JavaScript using Node.js.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-green-800 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tutorial Card: Markdown Basics -->
+      <a href="markdown-basics-tutorial.html" class="block group bg-gradient-to-br from-slate-700 to-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition duration-300"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl font-bold mb-3">Markdown Basics</h2>
+          <p class="text-slate-200 text-sm mb-4">Learn the simple syntax for formatting text on the web.</p>
+          <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-gray-900 transition">View Tutorial &rarr;</span>
+        </div>
+      </a>
+
+       <!-- Add more tutorial cards as needed -->
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+ <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

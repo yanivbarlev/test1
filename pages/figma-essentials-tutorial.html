@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Essentials Tutorial - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+      <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+        <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+        <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+        <li><a href="tutorials.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Tutorials</a></li>
+        <li><a href="guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+      </ul>
+       <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-purple-600 to-pink-500 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Tutorial: Figma Essentials</h1>
+            <p class="lead text-purple-100 !text-xl !mb-6">Learn the basics of Figma, the collaborative interface design tool.</p>
+            <p class="text-sm text-pink-100">By Upingi Team / Tutorial Level: Beginner</p>
+          </article>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 p-8 rounded-xl shadow-md border border-slate-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Why Learn Figma?</h2>
+            <p>Figma is a leading web-based design tool used for UI/UX design, prototyping, and creating design systems. Its collaborative features make it ideal for teams.</p>
+            <img src="../images/figma-essentials-tutorial.jpg" >
+            <p>Whether you're a designer, developer, or product manager, understanding Figma helps streamline the design and development process.</p>
+          </article>
+        </section>
+
+        <!-- Prerequisites Section -->
+        <section class="bg-gradient-to-r from-yellow-100 to-amber-200 text-slate-700 p-8 rounded-xl shadow-md border border-yellow-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Prerequisites</h2>
+             <ul class="!list-disc !pl-5 space-y-2">
+               <li><strong>Figma Account:</strong> Sign up for a free account at <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">Figma.com</a>.</li>
+               <li><strong>Web Browser:</strong> Figma runs in your browser (or use the desktop app).</li>
+             </ul>
+             <p>Let's start designing!</p>
+           </article>
+         </section>
+
+        <!-- Chapter 1: Interface and Basic Tools -->
+        <section class="bg-gradient-to-r from-sky-100 to-blue-200 text-slate-700 p-8 rounded-xl shadow-md border border-sky-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 1: Navigating the Interface</h2>
+            <p>Get familiar with the Figma canvas, layers panel, properties panel, and toolbar.</p>
+            <ol class="!list-decimal !pl-5 space-y-3">
+              <li><strong>Create a New File:</strong> Start a new design file.</li>
+              <li><strong>Frames:</strong> Understand frames (artboards) and create one using the Frame tool (F).</li>
+              <li><strong>Shape Tools:</strong> Draw basic shapes like rectangles (R) and ellipses (O).</li>
+              <li><strong>Text Tool:</strong> Add text using the Text tool (T).</li>
+              <li><strong>Selection Tool:</strong> Select and move objects using the Move tool (V).</li>
+              <li><strong>Zoom & Pan:</strong> Use Cmd/Ctrl + +/- to zoom and spacebar + drag to pan.</li>
+            </ol>
+            <p>You can now create and manipulate basic elements!</p>
+          </article>
+        </section>
+
+        <!-- Chapter 2: Prototyping Basics -->
+        <section class="bg-gradient-to-r from-green-100 to-emerald-200 text-slate-700 p-8 rounded-xl shadow-md border border-green-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 2: Simple Prototyping</h2>
+             <p>Figma allows you to create interactive prototypes directly from your designs, simulating user flows without writing code.</p>
+             <ol class="!list-decimal !pl-5 space-y-3">
+                <li><strong>Switch to Prototype Mode:</strong> Click the "Prototype" tab in the right-hand sidebar.</li>
+                <li><strong>Select Starting Frame:</strong> Choose the frame you want your prototype flow to begin with.</li>
+                <li><strong>Create Connections:</strong> Select an element you want to make interactive (like a button). A small blue circle will appear. Drag this circle to the frame you want to navigate to upon interaction.</li>
+                <li><strong>Configure Interaction:</strong> In the "Interaction details" panel that appears, choose the trigger (e.g., "On click", "On drag", "While hovering") and the action (e.g., "Navigate to", "Open overlay", "Scroll to"). You can also select an animation style (e.g., "Instant", "Dissolve", "Move in").</li>
+                <li><strong>Add More Connections:</strong> Repeat the process to link other frames and elements, building out your user flow (e.g., linking back buttons).</li>
+                <li><strong>Present Prototype:</strong> Click the "Present" (play) icon in the top right corner to view and interact with your prototype in a new tab.</li>
+             </ol>
+             <p>This allows you to test user journeys and get feedback early in the design process.</p>
+           </article>
+         </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-pink-100 to-rose-200 text-slate-700 p-8 rounded-xl shadow-md border border-pink-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Conclusion & Next Steps</h2>
+             <p>You now have a grasp of Figma's core interface and basic tools for creating simple designs. Practice is key to mastering design software!</p>
+             <p>Explore further:</p>
+             <ul class="!list-disc !pl-5 space-y-2">
+                <li>Learn about Components for reusable elements.</li>
+                <li>Explore Auto Layout for responsive designs.</li>
+                <li>Dive deeper into prototyping interactions and animations.</li>
+                <li>Understand Styles for consistent typography and color.</li>
+                <li>Collaborate with others using comments and sharing features.</li>
+             </ul>
+              <div class="mt-6 space-x-4">
+                <a href="comparisons.html" class="inline-block bg-pink-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-700 transition shadow-sm">Compare Design Tools</a>
+                <a href="guides.html" class="inline-block bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-rose-700 transition shadow-sm">Read Design Guides</a>
+              </div>
+           </article>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Key Tools Card -->
+        <div class="bg-gradient-to-r from-gray-800 to-black text-white p-6 rounded-xl shadow-lg sticky top-24 prose prose-invert prose-sm max-w-none">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-600 pb-3 text-white !mt-0">Key Figma Tools/Concepts</h3>
+           <ul class="text-sm space-y-1 text-slate-200 !my-0 !pl-0 !list-none">
+              <li>Frame Tool (F)</li>
+              <li>Rectangle (R), Ellipse (O)</li>
+              <li>Text Tool (T)</li>
+              <li>Move Tool (V)</li>
+              <li>Layers Panel</li>
+              <li>Properties Panel</li>
+              <li>Prototyping Mode</li>
+              <li>Components</li>
+              <li>Auto Layout</li>
+           </ul>
+        </div>
+         <!-- Related Content Card -->
+         <div class="bg-gradient-to-r from-purple-700 to-pink-600 text-white p-6 rounded-xl shadow-lg prose prose-invert prose-sm max-w-none">
+           <h3 class="text-xl font-semibold mb-5 border-b border-purple-400 pb-3 text-white !mt-0">Related Content</h3>
+           <ul class="space-y-3 !my-0 !pl-0 !list-none">
+             <li><a href="figma-vs-sketch.html" class="text-pink-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Figma vs. Sketch</a></li>
+             <li><a href="guides.html" class="text-pink-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">UI/UX Design Guides</a></li>
+             <li><a href="tutorials.html" class="text-pink-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">More Design Tutorials</a></li>
+           </ul>
+         </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html> 

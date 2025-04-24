@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Hooks Explained Tutorial - Upingi.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm p-4 z-20 border-b border-slate-200">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold text-sky-600 hover:text-sky-700 transition">Upingi.com</a>
+      <ul class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <li><a href="../index.html" class="hover:text-sky-600 transition">Home</a></li>
+        <li><a href="reviews.html" class="hover:text-sky-600 transition">Reviews</a></li>
+        <li><a href="comparisons.html" class="hover:text-sky-600 transition">Comparisons</a></li>
+        <li><a href="tutorials.html" class="text-sky-600 font-semibold border-b-2 border-sky-600 pb-1">Tutorials</a></li>
+        <li><a href="guides.html" class="hover:text-sky-600 transition">Guides</a></li>
+      </ul>
+       <button class="md:hidden focus:outline-none text-slate-500 hover:text-sky-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto px-4 py-16 lg:py-24 flex-grow">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+      <!-- Main Article Content -->
+      <main class="lg:col-span-2 space-y-8">
+
+        <!-- Article Header -->
+        <div class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white p-8 rounded-xl shadow-lg">
+          <article class="prose prose-lg lg:prose-xl max-w-none prose-invert">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white !mb-4">Tutorial: React Hooks Explained</h1>
+            <p class="lead text-cyan-100 !text-xl !mb-6">Understand and use React Hooks (`useState`, `useEffect`) to manage state and side effects in functional components.</p>
+            <p class="text-sm text-blue-100">By Upingi Team / Tutorial Level: Intermediate</p>
+          </article>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 p-8 rounded-xl shadow-md border border-slate-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">What are React Hooks?</h2>
+            <p>React Hooks allow you to use state and other React features in functional components, which were previously only available in class components. They make component logic more reusable and easier to understand.</p>
+            <img src="../images/react-hooks-tutorial.jpg">
+            <p>Hooks like `useState` and `useEffect` are fundamental for building modern React applications.</p>
+          </article>
+        </section>
+
+        <!-- Prerequisites Section -->
+        <section class="bg-gradient-to-r from-yellow-100 to-amber-200 text-slate-700 p-8 rounded-xl shadow-md border border-yellow-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Prerequisites</h2>
+             <ul class="!list-disc !pl-5 space-y-2">
+               <li><strong>Basic React Knowledge:</strong> Understanding React components, props, and JSX.</li>
+               <li><strong>JavaScript (ES6+):</strong> Familiarity with modern JavaScript features like arrow functions and destructuring.</li>
+               <li><strong>Node.js & npm/yarn:</strong> A React development environment setup (e.g., using Create React App).</li>
+             </ul>
+             <p>Let's hook into React features!</p>
+           </article>
+         </section>
+
+        <!-- Chapter 1: useState Hook -->
+        <section class="bg-gradient-to-r from-sky-100 to-blue-200 text-slate-700 p-8 rounded-xl shadow-md border border-sky-300">
+          <article class="prose prose-lg lg:prose-xl max-w-none">
+            <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 1: Managing State with `useState`</h2>
+            <p>The `useState` hook lets you add state variables to functional components.</p>
+            <ol class="!list-decimal !pl-5 space-y-3">
+              <li><strong>Import `useState`:</strong> `import React, { useState } from 'react';`.</li>
+              <li><strong>Declare State:</strong> Inside your component, call `useState` with the initial state: `const [count, setCount] = useState(0);`. This returns the current state (`count`) and a function to update it (`setCount`).</li>
+              <li><strong>Read State:</strong> Use the state variable directly in your JSX: `<p>You clicked { count } times</p>`.</li>
+              <li><strong>Update State:</strong> Call the update function (e.g., `setCount`) usually within an event handler: `<button onClick={ () => setCount(count + 1) }>Click me</button>`. Updating state triggers a re-render.</li>
+            </ol>
+            <p>Build a simple counter component using `useState`.</p>
+          </article>
+        </section>
+
+        <!-- Chapter 2: useEffect Hook -->
+        <section class="bg-gradient-to-r from-green-100 to-emerald-200 text-slate-700 p-8 rounded-xl shadow-md border border-green-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Chapter 2: Handling Side Effects with `useEffect`</h2>
+             <p>The `useEffect` hook lets you perform side effects in functional components. Common side effects include data fetching, setting up subscriptions, and manually changing the DOM.</p>
+             <p><strong>Basic Usage:</strong></p>
+             <p>Import it alongside `useState`: `import React, { useState, useEffect } from 'react';`. Then, call `useEffect` inside your component, passing it a function (the "effect").</p>
+             <pre><code class="language-jsx">useEffect(() => {
+  // This code runs after every render
+  document.title = `You clicked ${count} times`;
+}); // No dependency array: runs on every render</code></pre>
+
+             <p class="mt-4"><strong>Controlling When Effects Run (Dependency Array):</strong></p>
+             <p>The second argument to `useEffect` is the dependency array. It controls when the effect function re-runs:</p>
+             <ul class="!list-disc !pl-5 space-y-2">
+                <li><strong>No array (like above):</strong> The effect runs after *every* render. Use this sparingly.</li>
+                <li><strong>Empty array `[]`:</strong> The effect runs *only once* after the initial render. Useful for setup tasks like data fetching or starting timers.</li>
+                <li><strong>Array with variables `[count, name]`:</strong> The effect runs after the initial render *and* whenever any value in the array changes. This is the most common use case.</li>
+             </ul>
+             <pre><code class="language-jsx">useEffect(() => {
+  console.log('Count changed to:', count);
+}, [count]); // Only re-run the effect if count changes
+
+useEffect(() => {
+  // Fetch data only on initial render
+  fetchData();
+}, []); // Empty array: runs only once</code></pre>
+
+             <p class="mt-4"><strong>Cleanup Function:</strong></p>
+             <p>If your effect sets up something that needs to be cleaned up (like a subscription or timer), you can return a function from your effect. React will run this cleanup function before the component unmounts or before the effect re-runs.</p>
+              <pre><code class="language-jsx">useEffect(() => {
+  const timerId = setInterval(() => {
+    console.log('Tick!');
+  }, 1000);
+
+  // Cleanup function
+  return () => {
+    clearInterval(timerId);
+    console.log('Timer cleared!');
+  };
+}, []); // Run once, cleanup on unmount</code></pre>
+           </article>
+         </section>
+
+        <!-- Conclusion Section -->
+        <section class="bg-gradient-to-r from-pink-100 to-rose-200 text-slate-700 p-8 rounded-xl shadow-md border border-pink-300">
+           <article class="prose prose-lg lg:prose-xl max-w-none">
+             <h2 class="!text-2xl font-bold !mb-6 !text-slate-800">Conclusion & Next Steps</h2>
+             <p>You've learned the basics of `useState` for state management and the purpose of `useEffect` for side effects in React functional components. Hooks are essential tools for building modern React apps.</p>
+             <p>Explore more Hooks:</p>
+             <ul class="!list-disc !pl-5 space-y-2">
+                <li>`useContext` for accessing context.</li>
+                <li>`useReducer` for more complex state logic.</li>
+                <li>`useRef` for accessing DOM elements or storing mutable values.</li>
+                <li>`useMemo` and `useCallback` for performance optimizations.</li>
+                <li>Creating custom Hooks to encapsulate reusable logic.</li>
+             </ul>
+              <div class="mt-6 space-x-4">
+                <a href="comparisons.html" class="inline-block bg-pink-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-700 transition shadow-sm">Compare JS Frameworks</a>
+                <a href="guides.html" class="inline-block bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-rose-700 transition shadow-sm">Read Frontend Guides</a>
+              </div>
+           </article>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 mt-12 lg:mt-0">
+         <!-- Key Hooks Card -->
+        <div class="bg-gradient-to-r from-gray-800 to-black text-white p-6 rounded-xl shadow-lg sticky top-24 prose prose-invert prose-sm max-w-none">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-600 pb-3 text-white !mt-0">Key React Hooks</h3>
+           <ul class="text-sm space-y-1 text-slate-200 !my-0 !pl-0 !list-none font-mono">
+              <li>`useState`</li>
+              <li>`useEffect`</li>
+              <li>`useContext`</li>
+              <li>`useReducer`</li>
+              <li>`useCallback`</li>
+              <li>`useMemo`</li>
+              <li>`useRef`</li>
+              <li>Rules of Hooks</li>
+           </ul>
+        </div>
+         <!-- Related Content Card -->
+         <div class="bg-gradient-to-r from-cyan-600 to-blue-700 text-white p-6 rounded-xl shadow-lg prose prose-invert prose-sm max-w-none">
+           <h3 class="text-xl font-semibold mb-5 border-b border-cyan-400 pb-3 text-white !mt-0">Related Content</h3>
+           <ul class="space-y-3 !my-0 !pl-0 !list-none">
+             <li><a href="#" class="text-blue-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">React State Management Guide</a></li>
+             <li><a href="#" class="text-blue-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">Building a Simple React App</a></li>
+             <li><a href="tutorials.html" class="text-blue-200 hover:underline hover:text-white font-medium no-underline hover:no-underline">More React Tutorials</a></li>
+           </ul>
+         </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 py-12 mt-auto border-t border-slate-700">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6 space-x-6 text-sm">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+      </div>
+      <div class="mb-6 flex justify-center space-x-5">
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Facebook</span>FB</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">Twitter</span>TW</a>
+        <a href="#" class="text-slate-400 hover:text-sky-500 transition"><span class="sr-only">LinkedIn</span>LI</a>
+      </div>
+      <p class="text-sm">&copy; 2024 Upingi.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

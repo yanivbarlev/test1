@@ -1,0 +1,4 @@
+Pages with the AdSense script: 62
+Pages without the AdSense script: 0
+
+Pages missing the AdSense script:
